@@ -19,49 +19,49 @@ $ iceworks init component <templateNpmName>
 - 特点：React/Fusion/ice-scripts
 - npm 包名：`@icedesign/ice-react-material-template`
 - 使用场景：通用
-- 代码地址：[code]()
+- 代码地址：[code](/tree/master/packages/template-react)
 
 ### template-react-ts
 
 - 特点：React/Fusion/ice-scripts/TypeScript
 - npm 包名：`@icedesign/ice-react-ts-material-template`
 - 使用场景：通用
-- 代码地址：[code]()
+- 代码地址：[code](/tree/master/packages/template-react-ts)
 
 ### template-react-ts-build-scripts
 
 - 特点：React/Fusion/build-scripts/TypeScript
 - npm 包名：`@icedesign/react-ts-material-template`
 - 使用场景：通用
-- 代码地址：[code]()
+- 代码地址：[code](/tree/master/packages/template-react-ts-build-scripts)
 
 ### template-vue
 
 - 特点：Vue/ElementUI/Vue CLI
 - npm 包名：`@icedesign/ice-vue-material-template`
 - 使用场景：通用
-- 代码地址：[code]()
+- 代码地址：[code](/tree/master/packages/template-vue)
 
 ### template-rax
 
 - 特点：Rax/ElementUI/build-scripts
 - npm 包名：`rax-template`
 - 使用场景：无线多端场景
-- 代码地址：[code]()
+- 代码地址：[code](https://github.com/raxjs/rax-scripts/tree/master/packages/rax-template)
 
 ### template-chart
 
 - 特点：React/BizCharts/ice-scripts
 - npm 包名：`@icedesign/material-chart-template`
 - 使用场景：图表领域
-- 代码地址：[code]()
+- 代码地址：[code](/tree/master/packages/template-chart)
 
 ### template-react-deep
 
 - 特点：React/Fusion(deep)/ice-scripts/TypeScript
 - npm 包名：`@alifd/deep-template`
 - 使用场景：企业智能团队
-- 代码地址：[code]()
+- 代码地址：[code](/tree/master/packages/template-react-deep)
 
 ## 模板开发
 
