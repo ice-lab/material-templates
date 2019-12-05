@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "material-templates",
+  "scripts": {
+    "lint": "eslint --cache --ext .js,.jsx,.ts ./",
+    "lint-fix": "npm run lint -- --fix",
+    "ci": "npm run lint && npm run cov"
+  },
+  "dependencies": {
+    "@ice/spec": "^0.1.9",
+    "eslint": "^6.7.2",
+    "typescript": "^3.7.3"
+  }
+}
