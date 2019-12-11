@@ -56,6 +56,9 @@
     "last 2 versions",
     "not ie <= 8"
   ],
+  "ideMode": {
+    "name": "ice-vue"
+  },
   "scaffoldConfig": {
     "builder": "vue-cli-service",
     "name": "<%= name %>",
