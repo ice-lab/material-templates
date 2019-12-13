@@ -3,16 +3,19 @@ import { ConfigProvider, Button } from '@ali/deep';
 import PropTypes from 'vision-types';
 
 interface IProps {
-  deepPrefix: string
+  deepPrefix: string,
+  device: string
 }
 
 class Deep<%= className %> extends React.Component<IProps> {
   static defaultProps = {
-    deepPrefix: 'deep-'
+    deepPrefix: 'deep-',
+    device: 'desktop'
   }
   // for low-code
   static propTypes = {
-    deepPrefix: PropTypes.string
+    deepPrefix: PropTypes.string,
+    device: PropTypes.string
   }
 
   render() {
