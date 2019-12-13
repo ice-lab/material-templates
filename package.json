@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "eslint --cache --ext .js,.jsx,.ts ./",
     "lint-fix": "npm run lint -- --fix",
-    "ci": "npm run lint && npm run cov"
+    "ci": "npm run lint"
   },
   "dependencies": {
     "@ice/spec": "^0.1.9",
