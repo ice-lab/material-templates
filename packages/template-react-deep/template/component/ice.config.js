@@ -15,7 +15,7 @@ module.exports = {
         'style': false,
       },
     ]],
-    '@ali/ice-plugin-component-deep',
+    'ice-plugin-component',
     ['ice-plugin-moment-locales', {
       locales: ['zh-cn'],
     }],
