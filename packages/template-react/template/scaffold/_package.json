@@ -21,7 +21,7 @@
     "jsconfig.json"
   ],
   "scripts": {
-    "start": "build-scripts dev",
+    "start": "build-scripts start",
     "build": "build-scripts build",
     "screenshot": "screenshot -l",
     "prepublishOnly": "npm run build && npm run screenshot",
