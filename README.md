@@ -44,10 +44,10 @@ $ iceworks init component <templateNpmName>
 
 ### template-rax
 
-- 特点：Rax/ElementUI/build-scripts
-- npm 包名：`rax-template`
+- 特点：Rax/build-scripts
+- npm 包名：`@icedesign/template-rax`
 - 使用场景：无线多端场景
-- 代码地址：[code](https://github.com/raxjs/rax-scripts/tree/master/packages/rax-template)
+- 代码地址：[code](/packages/template-rax)
 
 ### template-chart
 
