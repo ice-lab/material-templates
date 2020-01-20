@@ -1,7 +1,7 @@
 {
-  "name": "@icedesign/material-chart-template",
-  "version": "0.2.0",
-  "description": "面向图表领域定制模板",
+  "name": "@icedesign/template-rax",
+  "version": "0.1.1",
+  "description": "Rax 物料模板",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,19 +12,15 @@
     "ice",
     "ice-template"
   ],
-  "author": {
-    "name": "ICE Team",
-    "email": "ice-admin@alibaba-inc.com"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alibaba/ice"
+    "url": "https://github.com/alibaba/ice/tree/master/packages/template-rax"
   },
   "publishConfig": {
     "access": "public"
   },
   "materialConfig": {
-    "type": "react"
+    "type": "rax"
   }
 }
