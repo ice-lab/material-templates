@@ -9,6 +9,7 @@
     "build/"
   ],
   "main": "lib/index.js",
+  "module": "es/index.js",
   "stylePath": "style.js",
   "scripts": {
     "start": "build-scripts start",
@@ -33,10 +34,14 @@
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "@ice/spec": "^0.1.1",
-    "eslint": "^6.0.1"
+    "eslint": "^6.0.1",
+    "@alifd/next": "1.x",
+    "@types/react": "^16.9.13",
+    "@types/react-dom": "^16.9.4"
   },
   "peerDependencies": {
-    "react": "^16.3.0"
+    "react": "^16.3.0",
+    "@alifd/next": "1.x"
   },
   "componentConfig": {
     "name": "<%= npmName %>",
