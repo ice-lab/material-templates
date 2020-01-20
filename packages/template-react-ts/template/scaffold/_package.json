@@ -50,6 +50,9 @@
     "type": "react",
     "adapter": "adapter-react-v3"
   },
+  "ideMode": {
+    "name": "ice-react"
+  },
   "scaffoldConfig": {
     "name": "<%= npmName %>",
     "title": "<%= title %>",
