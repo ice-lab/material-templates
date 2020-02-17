@@ -1,8 +1,11 @@
 import React from 'react';
 
-export default function <%= className %>() {
+export default function <%= className %>(props) {
+  const { type, ...others } = props;
+  console.log(type);
+
   return (
-    <div className="<%= name %>">Hello <%= className %></div>
+    <div className="<%= name %>" {...others}>Hello <%= className %></div>
   );
 }
 
