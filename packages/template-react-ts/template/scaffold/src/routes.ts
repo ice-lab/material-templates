@@ -1,6 +1,5 @@
 import BasicLayout from '@/layouts/BasicLayout';
 import Home from '@/pages/Home';
-import About from '@/pages/About';
 import NotFound from '@/pages/NotFound';
 
 const routerConfig = [
@@ -9,11 +8,8 @@ const routerConfig = [
     component: BasicLayout,
     children: [
       {
-        path: '/about',
-        component: About,
-      },
-      {
         path: '/',
+        exact: true,
         component: Home,
       },
       {
