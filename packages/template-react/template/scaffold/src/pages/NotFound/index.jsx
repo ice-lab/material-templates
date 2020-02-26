@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'ice';
 import styles from './index.module.scss';
 
 export default function NotFound() {

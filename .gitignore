@@ -9,6 +9,7 @@ yarn.lock
 yarn-error.log
 tempDir
 coverage/
+.ice/
 
 .eslintcache
 build

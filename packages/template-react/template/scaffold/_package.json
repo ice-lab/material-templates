@@ -2,9 +2,6 @@
   "name": "<%= npmName %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "files": [
     "src/",
     "build/",
@@ -14,47 +11,55 @@
     "_editorconfig",
     "_eslintignore",
     "_eslintrc.js",
+    "_prettierignore",
+    "_prettierrc.js",
     "_stylelintignore",
     "_stylelintrc.js",
-    "ice.config.js",
+    "build.json",
     "screenshot.png",
+    "tsconfig.json",
     "jsconfig.json"
   ],
   "scripts": {
-    "start": "ice-scripts dev",
-    "build": "ice-scripts build",
-    "screenshot": "screenshot -l",
+    "start": "icejs start",
+    "build": "icejs build",
+    "screenshot": "../../node_modules/.bin/screenshot -l",
     "prepublishOnly": "npm run build && npm run screenshot",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
     "stylelint": "stylelint ./**/*.scss"
   },
   "dependencies": {
-    "@alifd/next": "^1.10.1",
-    "@icedesign/theme": "^1.x",
+    "@alifd/next": "^1.19.4",
+    "moment": "^2.24.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-router-dom": "^5.0.1"
+    "@alifd/theme-design-pro": "^0.x"
   },
   "devDependencies": {
-    "@ice/screenshot": "^0.1.1",
-    "@ice/spec": "^0.1.1",
+    "@ice/spec": "^1.0.0",
+    "build-plugin-fusion": "^0.1.0",
+    "build-plugin-moment-locales": "^0.1.0",
     "eslint": "^6.0.1",
-    "stylelint": "^10.1.0",
-    "ice-plugin-fusion": "^0.1.4",
-    "ice-plugin-moment-locales": "^0.1.0",
-    "ice-scripts": "^2.0.0"
+    "ice.js": "^1.0.0",
+    "stylelint": "^13.2.0"
   },
-  "iceworks": {
-    "type": "react",
-    "adapter": "adapter-react-v3"
-  },
-  "ideMode": {
-    "name": "ice-react"
+  "publishConfig": {
+    "access": "public"
   },
   "scaffoldConfig": {
     "name": "<%= npmName %>",
     "title": "<%= title %>",
     "category": "<%= category %>"
+  },
+  "ideMode": {
+    "name": "ice-react"
+  },
+  "iceworks": {
+    "type": "react",
+    "adapter": "adapter-react-v3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   }
 }
