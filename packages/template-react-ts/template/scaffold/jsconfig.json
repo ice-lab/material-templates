@@ -3,7 +3,9 @@
     "baseUrl": ".",
     "jsx": "react",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "ice": [".ice/index.ts"],
+      "ice/*": [".ice/pages/*"]
     }
   }
 }

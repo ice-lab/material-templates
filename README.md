@@ -16,24 +16,17 @@ $ iceworks init component <templateNpmName>
 
 ### template-react
 
-- 特点：React/Fusion/ice-scripts
+- 特点：React/Fusion/icejs
 - npm 包名：`@icedesign/ice-react-material-template`
 - 使用场景：通用
 - 代码地址：[code](/packages/template-react)
 
 ### template-react-ts
 
-- 特点：React/Fusion/ice-scripts/TypeScript
+- 特点：React/Fusion/icejs/TypeScript
 - npm 包名：`@icedesign/ice-react-ts-material-template`
 - 使用场景：通用
 - 代码地址：[code](/packages/template-react-ts)
-
-### template-react-ts-build-scripts
-
-- 特点：React/Fusion/build-scripts/TypeScript
-- npm 包名：`@icedesign/react-ts-material-template`
-- 使用场景：通用
-- 代码地址：[code](/packages/template-react-ts-build-scripts)
 
 ### template-vue
 
@@ -51,7 +44,7 @@ $ iceworks init component <templateNpmName>
 
 ### template-chart
 
-- 特点：React/BizCharts/ice-scripts
+- 特点：React/BizCharts/build-scripts
 - npm 包名：`@icedesign/material-chart-template`
 - 使用场景：图表领域
 - 代码地址：[code](/packages/template-chart)
