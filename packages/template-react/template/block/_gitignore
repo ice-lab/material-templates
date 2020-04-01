@@ -8,7 +8,6 @@ build/
 dist/
 tmp/
 lib/
-es/
 
 # misc
 .idea/
@@ -20,4 +19,3 @@ es/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-CHANGELOG.md
