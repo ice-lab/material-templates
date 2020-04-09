@@ -7,7 +7,6 @@
     "build/",
     "screenshot.png"
   ],
-  "license": "MIT",
   "keywords": [
     "ice",
     "react",
@@ -37,5 +36,9 @@
     "name": "<%= name %>",
     "title": "<%= title %>",
     "category": "<%= category %>"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
 }
