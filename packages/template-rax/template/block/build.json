@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    [
+      "build-plugin-block-rax",
+      {
+        "type": "rax",
+        "targets": ["web"]
+      }
+    ]
+  ]
+}
