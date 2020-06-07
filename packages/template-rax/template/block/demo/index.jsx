@@ -1,6 +1,5 @@
 import { createElement, render } from 'rax';
 import DriverUniversal from 'driver-universal';
-import MyComponent from '../src/index';
+import Block from '../src/index';
 
-
-render(<MyComponent />, document.body, { driver: DriverUniversal });
+render(<Block />, document.body, { driver: DriverUniversal });

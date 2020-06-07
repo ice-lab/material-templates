@@ -1,7 +1,7 @@
 {
   "plugins": [
     [
-      "build-plugin-block-rax",
+      "build-plugin-rax-block",
       {
         "type": "rax",
         "targets": ["web"]
