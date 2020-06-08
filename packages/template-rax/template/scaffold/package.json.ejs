@@ -3,12 +3,24 @@
   "version": "<%= version %>",
   "description": "<%= description %>",
   "files": [
-    "build/"
+    "src/",
+    "build/",
+    "public/",
+    "_gitignore",
+    "_editorconfig",
+    "_eslintignore",
+    "_eslintrc.js",
+    "build.json",
+    "screenshot.png",
+    "tsconfig.json",
+    "jsconfig.json"
   ],
   "scripts": {
     "build": "build-scripts build",
     "start": "build-scripts start",
-    "lint": "eslint --ext .js --ext .jsx ./"
+    "lint": "eslint --ext .js --ext .jsx ./",
+    "screenshot": "screenshot -l -u /build/web/index.html -s root",
+    "prepublishOnly": "npm run build && npm run screenshot"
   },
   "dependencies": {
     "rax": "^1.1.0",
@@ -29,8 +41,8 @@
     "eslint-config-rax": "^0.0.3",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-react": "^7.18.0"
-  }
-   "scaffoldConfig": {
+  },
+  "scaffoldConfig": {
     "name": "<%= name %>",
     "title": "<%= title %>",
     "category": "<%= category %>"

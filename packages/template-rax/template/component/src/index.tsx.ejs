@@ -1,27 +1,11 @@
 import { createElement } from 'rax';
 import View from 'rax-view';
 import Text from 'rax-text';
-import { useStyles } from '@rax-ui/styles';
-import StyleProvider from './style/index';
 
 const MyComponent = (props) => {
-  const { onChange, style = {}, ...others } = props;
-
-  const styles = useStyles(StyleProvider, others, (classNames) => {
-    return {
-      myComponent: {
-        ...classNames('component'),
-        ...style,
-      },
-      myText: classNames('component--text'),
-    };
-  });
-
-  const handleClick = () => {};
-
   return (
-    <View style={styles.myComponent} onClick={handleClick}>
-      <Text style={styles.myText}>Hello World!</Text>
+    <View>
+      <Text>Hello World!</Text>
     </View>
   );
 };
