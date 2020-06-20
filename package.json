@@ -4,11 +4,16 @@
   "scripts": {
     "lint": "eslint --cache --ext .js,.jsx,.ts ./",
     "lint-fix": "npm run lint -- --fix",
-    "ci": "npm run lint"
+    "ci": "npm run lint",
+    "publish:packages": "ts-node ./scripts/publish.ts"
   },
   "dependencies": {
     "@ice/spec": "^0.1.9",
     "eslint": "^6.7.2",
     "typescript": "^3.7.3"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "ts-node": "^8.10.2"
   }
 }
