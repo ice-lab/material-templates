@@ -21,8 +21,7 @@ function publish(pkg: string, version: string, directory: string): void {
 console.log('[PUBLISH] Start:');
 
 Promise.all([
-  getPackageInfos(join(__dirname, '../scaffolds')),
-  getPackageInfos(join(__dirname, '../blocks'))
+  getPackageInfos(join(__dirname, '../packages'))
 ]).then((result: IPackageInfo[][]) => {
 
   let publishedCount = 0;
