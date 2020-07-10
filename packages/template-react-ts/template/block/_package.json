@@ -19,7 +19,8 @@
     "prepublishOnly": "npm run build && npm run screenshot"
   },
   "dependencies": {
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.8",
+    "@alifd/next": "1.x"
   },
   "devDependencies": {
     "@alib/build-scripts": "^0.1.3",
