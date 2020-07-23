@@ -10,7 +10,7 @@
   "scripts": {
     "start": "build-scripts start",
     "build": "build-scripts build",
-    "screenshot": "screenshot -l -s body",
+    "screenshot": "screenshot -l -s .device-view",
     "prepublishOnly": "npm run build && npm run screenshot"
   },
   "dependencies": {
@@ -24,7 +24,8 @@
     "@alib/build-scripts": "^0.1.0",
     "@ice/screenshot": "^0.1.5",
     "@types/rax": "^1.0.0",
-    "build-plugin-rax-block": "^0.1.0",
+    "build-plugin-rax-component": "^0.2.0",
+    "build-plugin-multi-demo-portal": "^0.1.0",
     "driver-universal": "^3.1.0",
     "rax": "^1.1.0",
     "rax-test-renderer": "^1.0.0",

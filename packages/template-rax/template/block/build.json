@@ -1,11 +1,12 @@
 {
   "plugins": [
     [
-      "build-plugin-rax-block",
+      "build-plugin-rax-component",
       {
         "type": "rax",
         "targets": ["web"]
       }
-    ]
+    ],
+    "build-plugin-multi-demo-portal"
   ]
 }
