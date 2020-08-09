@@ -1,0 +1,41 @@
+{
+  "name": "<%= npmName %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "build",
+    "dist",
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "Rax",
+    "api"
+  ],
+  "engines": {
+    "npm": ">=3.0.0"
+  },
+  "scripts": {
+    "start": "build-scripts start",
+    "build": "build-scripts build",
+    "lint": "eslint ./src/**/*.*",
+    "lint-fix": "eslint --fix ./src/**/*.*",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5",
+    "build-plugin-rax-component": "^0.2.0",
+    "@alib/build-scripts": "^0.1.0"
+  }
+  "componentConfig": {
+    "name": "<%= name %>",
+    "title": "<%= title %>",
+    "category": "<%= category %>"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

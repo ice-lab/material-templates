@@ -4,9 +4,8 @@
       "build-plugin-rax-component",
       {
         "type": "rax",
-        "targets": ["web"]
+        targets": ["<%- projectTargets.join('", "') %>"]
       }
-    ],
-    "build-plugin-multi-demo-portal"
+    ]
   ]
 }

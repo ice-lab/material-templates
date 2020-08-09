@@ -4,10 +4,6 @@
   "description": "<%= description %>",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "miniappConfig": {
-    "main": "lib/miniapp/index",
-    "main:wechat": "lib/wechat-miniprogram/index"
-  },
   "files": [
     "build",
     "dist",
@@ -33,9 +29,6 @@
     "rax-view": "^1.0.0"
   },
   "peerDependencies": {
-    <%_ if (projectTargets.includes('miniapp') || projectTargets.includes('wechat-miniprogram')) { -%>
-    "jsx2mp-runtime": "^0.4.8",
-    <%_ } -%>
     "rax": "^1.1.0"
   },
   "devDependencies": {
