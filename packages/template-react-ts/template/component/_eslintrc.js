@@ -1,5 +1,5 @@
-const { eslint, deepmerge } = require('@ice/spec');
+const { tslint, deepmerge } = require('@ice/spec');
 
-module.exports = deepmerge(eslint, {
+module.exports = deepmerge(tslint, {
   rules: {},
 });
