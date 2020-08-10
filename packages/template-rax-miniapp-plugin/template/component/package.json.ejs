@@ -4,10 +4,6 @@
   "description": "<%= description %>",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "miniappConfig": {
-    "main": "lib/miniapp/index",
-    "main:wechat": "lib/wechat-miniprogram/index"
-  },
   "files": [
     "build",
     "dist",
@@ -29,19 +25,17 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    "rax-image": "^2.0.0",
     "rax-text": "^1.0.0",
     "rax-view": "^1.0.0"
   },
   "peerDependencies": {
-    <%_ if (projectTargets.includes('miniapp') || projectTargets.includes('wechat-miniprogram')) { -%>
-    "jsx2mp-runtime": "^0.4.8",
-    <%_ } -%>
     "rax": "^1.1.0"
   },
   "devDependencies": {
     "@alib/build-scripts": "^0.1.0",
     "@types/rax": "^1.0.0",
-    "build-plugin-rax-component": "^0.2.0",
+    "build-plugin-rax-miniapp-plugin": "^0.1.0",
     "driver-universal": "^3.1.0",
     "eslint": "^6.7.2",
     "eslint-config-rax": "^0.0.3",
