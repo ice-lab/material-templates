@@ -1,0 +1,30 @@
+{
+  "schema": {
+    "title": "用户任务列表",
+    "description": "显示用户信息和用户持有的任务",
+    "type": "object",
+    "required": [
+      "isShowUser",
+      "isShowTodos"
+    ],
+    "properties": {
+      "isShowUser": {
+        "type": "boolean",
+        "title": "是否显示用户信息",
+        "default": "Chuck"
+      },
+      "isShowTodos": {
+        "type": "boolean",
+        "title": "是否显示任务列表"
+      },
+      "title": {
+        "type": "string",
+        "title": "标题"
+      },
+      "userTitle": {
+        "type": "string",
+        "title": "用户标题"
+      }
+    }
+  }
+}
