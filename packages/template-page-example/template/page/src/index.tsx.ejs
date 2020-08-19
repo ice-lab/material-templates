@@ -31,10 +31,10 @@ async function fetchTodos() {
 
 export default function() {
   <% if (isShowUser) { %>
-  const { user, setUser } = useState({});
+  const [ user, setUser ] = useState({});
   <% } %>
   <% if (isShowTodos) { %>
-  const { todos, setTodos } = useState([]);
+  const [ todos, setTodos ] = useState([]);
   <% } %>
   useEffect(() => {
     <% if (isShowUser) { %>

@@ -1,12 +1,9 @@
 {
   "plugins": [
-    ["build-plugin-block", {
-      "template": true
-    }],
     "build-plugin-fusion",
     ["build-plugin-moment-locales", {
       "locales": ["zh-cn"]
     }],
-    "build-plugin-material-template"
+    "build-plugin-template"
   ]
 }
