@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default function(props) {
-  const { dataSources } = props;
+  const { dataSource } = props;
   return (
     <div>
       {
-        dataSources.map(function({ title }) {
+        dataSource.map(function({ title }) {
           return (
             <div>
               <span>{title}</span>
