@@ -20,10 +20,6 @@
       "title": {
         "type": "string",
         "title": "标题"
-      },
-      "userTitle": {
-        "type": "string",
-        "title": "用户标题"
       }
     }
   }
