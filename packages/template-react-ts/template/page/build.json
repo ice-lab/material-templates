@@ -4,6 +4,11 @@
     ["build-plugin-moment-locales", {
       "locales": ["zh-cn"]
     }],
-    "build-plugin-template"
+    ["build-plugin-block",
+      {
+        "usingTemplate":true,
+        "materialType":"Page"
+      }
+    ]
   ]
 }
