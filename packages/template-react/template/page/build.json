@@ -7,7 +7,7 @@
     ["build-plugin-block",
       {
         "usingTemplate":true,
-        "materialType":"Page"
+        "materialType":"page"
       }
     ]
   ]

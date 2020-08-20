@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 <% if (isShowUser) { %>
 import User from './components/User';
 <% } %>
-<% if (isShowTodos) { %>
 import Todos from './components/Todos';
-<% } %>
 
 const delay = (time) => new Promise((resolve) => setTimeout(() => resolve(), time));
 
@@ -15,7 +13,6 @@ async function fetchUser() {
 }
 <% } %>
 
-<% if (isShowTodos) { %>
 async function fetchTodos() {
   await delay(1000);
   return [
@@ -27,34 +24,27 @@ async function fetchTodos() {
     }
   ];
 }
-<% } %>
 
 export default function() {
   <% if (isShowUser) { %>
   const [ user, setUser ] = useState({});
   <% } %>
-  <% if (isShowTodos) { %>
   const [ todos, setTodos ] = useState([]);
-  <% } %>
   useEffect(() => {
     <% if (isShowUser) { %>
     async function initUser() {
       setUser(await fetchUser());
     }
     <% } %>
-    <% if (isShowTodos) { %>
     async function initTodos() {
       setTodos(await fetchTodos());
     }
-    <% } %>
 
     <% if (isShowUser) { %>
     initUser();
     <% } %>
 
-    <% if (isShowTodos) { %>
     initTodos();
-    <% } %>
   }, []);
 
   return (
@@ -65,9 +55,7 @@ export default function() {
       <% if (isShowUser) { %>
       <User {...user} />
       <% } %>
-      <% if (isShowTodos) { %>
       <Todos dataSource={todos} />
-      <% } %>
     </>
   );
 } 
