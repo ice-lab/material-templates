@@ -13,6 +13,5 @@ coverage/
 
 .eslintcache
 build
-.vscode/
 .tmp/
 npmrc
