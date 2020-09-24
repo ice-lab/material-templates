@@ -1,15 +1,13 @@
 import * as React from 'react';
 
-export default function <%= className %>(props) {
+type ComponentProps = {
+  title: string,
+};
+
+export default function <%= className %>(props: ComponentProps) {
   const { type, ...others } = props;
 
   return (
     <div className="<%= name %>" {...others}>Hello <%= className %></div>
   );
 }
-
-<%= className %>.propTypes = {
-};
-
-<%= className %>.defaultProps = {
-};
