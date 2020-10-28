@@ -2,10 +2,10 @@
   <div id="app">
     <ul id="nav">
       <li v-for="item in headerMenuConfig" :key="item.path">
-        <router-link :to="item.path">{{item.name}}</router-link>
+        <router-link :to="item.path">{{ item.name }}</router-link>
       </li>
     </ul>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -35,7 +35,7 @@ import { headerMenuConfig } from '@/menuConfig';
 
 export default {
   data: () => {
-    return { headerMenuConfig }
-  }
+    return { headerMenuConfig };
+  },
 };
 </script>

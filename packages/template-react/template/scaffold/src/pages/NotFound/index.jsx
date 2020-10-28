@@ -12,9 +12,7 @@ export default function NotFound() {
           alt="not found"
         />
         <div className="prompt">
-          <h3 className={styles.title}>
-            Sorry, Page not found!
-          </h3>
+          <h3 className={styles.title}>Sorry, Page not found!</h3>
           <p className={styles.description}>
             Please back to
             <Link to="/">home</Link>

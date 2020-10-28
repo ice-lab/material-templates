@@ -2,18 +2,31 @@
   "private": true,
   "name": "material-templates",
   "scripts": {
-    "lint": "eslint --cache --ext .js,.jsx,.ts ./",
-    "lint-fix": "npm run lint -- --fix",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts ./",
+    "eslint-fix": "npm run lint -- --fix",
+    "lint": "npm run eslint && npm run stylelint",
+    "stylelint": "stylelint ./**/*.{css,scss} ",
     "ci": "npm run lint",
+    "prettier": "prettier **/* --write",
     "publish:packages": "ts-node ./scripts/publish.ts"
   },
   "dependencies": {
-    "@ice/spec": "^0.1.9",
-    "eslint": "^6.7.2",
     "typescript": "^3.7.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@iceworks/spec": "^1.0.0",
     "axios": "^0.19.2",
+    "eslint": "^6.8.0",
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
     "ts-node": "^8.10.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run lint"
+    }
   }
 }
