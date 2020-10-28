@@ -1,8 +1,7 @@
-const { tslint, deepmerge } = require('@ice/spec');
+const { getESLintConfig } = require('@iceworks/spec');
 
-module.exports = deepmerge(tslint, {
+module.exports = getESLintConfig('react-ts', { 
   env: {
     jest: true
   },
-  rules: {},
 });
