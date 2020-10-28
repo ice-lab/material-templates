@@ -2,7 +2,7 @@
   "private": true,
   "name": "material-templates",
   "scripts": {
-    "eslint": "eslint --cache --ext .js,.jsx,.ts ./",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
     "eslint-fix": "npm run lint -- --fix",
     "lint": "npm run eslint && npm run stylelint",
     "stylelint": "stylelint ./**/*.{css,scss} ",

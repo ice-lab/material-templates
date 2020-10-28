@@ -4,7 +4,7 @@ export default function (props) {
   const { dataSource } = props;
   return (
     <div>
-      {dataSource.map(function ({ title }) {
+      {dataSource.map(({ title }) => {
         return (
           <div>
             <span>{title}</span>
