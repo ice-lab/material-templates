@@ -1,7 +1,7 @@
-# 忽略目录
+node_modules/
+lib/
+dist/
 build/
-tests/
-demo/
-
-# node 覆盖率文件
 coverage/
+demo/
+examples/

@@ -1,13 +1,7 @@
-# 忽略目录
-build/
 node_modules/
+lib/
 dist/
-
-# node 覆盖率文件
+build/
 coverage/
-
-# 忽略文件
-**/*-min.js
-**/*.min.js
-
-scripts/
+demo/
+examples/
