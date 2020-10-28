@@ -1,3 +1,8 @@
 const { getESLintConfig } = require('@iceworks/spec');
 
-module.exports = getESLintConfig('react');
+// https://www.npmjs.com/package/@iceworks/spec
+module.exports = getESLintConfig('react', {
+  rules: {
+
+  },
+});
