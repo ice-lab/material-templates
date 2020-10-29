@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import axios from 'axios';
