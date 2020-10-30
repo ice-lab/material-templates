@@ -16,7 +16,9 @@
     "build": "build-scripts build",
     "test": "build-scripts test",
     "prepublishOnly": "npm run build",
-    "lint": "eslint --cache --ext .js,.jsx ./"
+    "eslint": "eslint --ext .ts,.tsx ./",
+    "stylelint": "stylelint ./**/*.scss",
+    "lint": "npm run eslint && npm run stylelint"
   },
   "keywords": [
     "ice",
@@ -37,6 +39,7 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "@iceworks/spec": "^1.0.0",
     "eslint": "^6.8.0",
+    "stylelint": "^13.7.2",
     "@alifd/next": "1.x",
     "@types/react": "^16.9.13",
     "@types/react-dom": "^16.9.4"
