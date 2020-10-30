@@ -14,7 +14,9 @@
     "start": "build-scripts start",
     "build": "build-scripts build",
     "prepublishOnly": "npm run build",
-    "lint": "eslint --cache --ext .js,.jsx ./"
+    "eslint": "eslint --ext .js,.jsx ./",
+    "stylelint": "stylelint ./**/*.scss",
+    "lint": "npm run eslint && npm run stylelint"
   },
   "license": "MIT",
   "keywords": [
@@ -38,6 +40,7 @@
     "@types/react-dom": "^16.3.0",
     "@iceworks/spec": "^1.0.0",
     "eslint": "^6.8.0",
+    "stylelint": "^13.7.2",
     "@alife/theme-97": "^1.0.1"
   },
   "peerDependencies": {
