@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = {
   outputDir: 'build',
   publicPath: './',
