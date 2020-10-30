@@ -8,22 +8,23 @@ import { IPackageInfo, getPackageInfos } from './getPackageInfos';
 function publish(pkg: string, version: string, directory: string): void {
   console.log('[PUBLISH]', `${pkg}@${version}`);
 
-  spawnSync('npm', [
-    'publish',
-    // use default registry
-  ], {
-    stdio: 'inherit',
-    cwd: directory,
-  });
+  spawnSync(
+    'npm',
+    [
+      'publish',
+      // use default registry
+    ],
+    {
+      stdio: 'inherit',
+      cwd: directory,
+    },
+  );
 }
 
 // Entry
 console.log('[PUBLISH] Start:');
 
-Promise.all([
-  getPackageInfos(join(__dirname, '../packages'))
-]).then((result: IPackageInfo[][]) => {
-
+Promise.all([getPackageInfos(join(__dirname, '../packages'))]).then((result: IPackageInfo[][]) => {
   let publishedCount = 0;
   // Publish
   for (let i = 0; i < result.length; i++) {
@@ -37,5 +38,5 @@ Promise.all([
       }
     }
   }
-  console.log(`[PUBLISH] Complete (count=${publishedCount}).`)
+  console.log(`[PUBLISH] Complete (count=${publishedCount}).`);
 });

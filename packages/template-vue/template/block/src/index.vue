@@ -5,23 +5,20 @@
 </template>
 
 <script>
-
 export default {
   name: 'ExampleBlock',
 
   data() {
-    return {}
+    return {};
   },
 
   created() {},
 
-  methods: {}
-}
-
+  methods: {},
+};
 </script>
 
 <style>
-  .example-block {
-
-  }
+.example-block {
+}
 </style>
