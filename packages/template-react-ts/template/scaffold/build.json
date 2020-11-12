@@ -1,5 +1,4 @@
 {
-  "eslint": true,
   "publicPath": "./",
   "plugins": [
     [
