@@ -20,8 +20,8 @@
   "scripts": {
     "start": "build-scripts start",
     "build": "build-scripts build",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
-    "lint-fix": "eslint --fix ./src/**/*.*",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx ./",
+    "eslin:fix": "npm run eslint -- --fix",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

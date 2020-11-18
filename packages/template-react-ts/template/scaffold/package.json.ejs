@@ -26,9 +26,10 @@
     "build": "icejs build",
     "screenshot": "../../node_modules/.bin/screenshot -l",
     "prepublishOnly": "npm run build && npm run screenshot",
-    "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
-    "stylelint": "stylelint ./**/*.scss"
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint '**/*.{css,scss,less}'"
+    "lint": "npm run eslint && npm run stylelint"
   },
   "dependencies": {
     "@alifd/next": "^1.19.4",
