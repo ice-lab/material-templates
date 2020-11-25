@@ -21,7 +21,7 @@
     "build": "rax-app build",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx ./",
     "eslint:fix": "npm run eslint -- --fix",
-    "stylelint": "stylelint '**/*.{css,scss,less}'",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
     "lint": "npm run eslint && npm run stylelint",
     "screenshot": "screenshot -l -u /build/web/index.html -s root",
     "prepublishOnly": "npm run build && npm run screenshot"
