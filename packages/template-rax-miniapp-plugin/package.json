@@ -1,6 +1,6 @@
 {
   "name": "@icedesign/template-rax-miniapp-plugin",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Rax 小程序插件模板",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

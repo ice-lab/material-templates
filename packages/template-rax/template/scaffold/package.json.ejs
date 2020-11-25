@@ -20,7 +20,8 @@
     "start": "rax-app start",
     "build": "rax-app build",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx ./",
-    "stylelint": "stylelint ./**/*.css",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
     "lint": "npm run eslint && npm run stylelint",
     "screenshot": "screenshot -l -u /build/web/index.html -s root",
     "prepublishOnly": "npm run build && npm run screenshot"
@@ -37,7 +38,6 @@
     "rax-app": "^3.0.0",
     "@iceworks/spec": "^1.0.0",
     "@types/rax": "^1.0.0",
-    "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "stylelint": "^13.7.2"
   },

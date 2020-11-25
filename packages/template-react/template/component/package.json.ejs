@@ -17,8 +17,8 @@
     "test": "build-scripts test",
     "prepublishOnly": "npm run build",
     "eslint": "eslint --cache --ext .js,.jsx ./",
-    "eslint-fix": "npm run eslint -- --fix",
-    "stylelint": "stylelint ./**/*.scss",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
     "lint": "npm run eslint && npm run stylelint"
   },
   "keywords": [
