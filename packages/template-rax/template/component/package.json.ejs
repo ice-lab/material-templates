@@ -4,10 +4,12 @@
   "description": "<%= description %>",
   "main": "lib/index.js",
   "module": "es/index.js",
+  <%_ if (miniappComponentBuildType === 'compile') { -%>
   "miniappConfig": {
     "main": "lib/miniapp/index",
     "main:wechat": "lib/wechat-miniprogram/index"
   },
+  <%_ } -%>
   "files": [
     "build",
     "dist",
