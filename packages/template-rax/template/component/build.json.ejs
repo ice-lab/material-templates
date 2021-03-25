@@ -12,7 +12,7 @@
   <%_ } _%>
   "plugins": [
     "build-plugin-component"
-    <% if(isAliInternal && projectTargets.indexOf('miniapp') > -1 && miniappComponentBuildType === 'runtime') {%>
+    <% if(isAliInternal && projectTargets.indexOf('miniapp') > -1) {%>
       ,"@ali/build-plugin-miniapp-preview"
     <%}%>
   ]
