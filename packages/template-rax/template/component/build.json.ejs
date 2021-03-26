@@ -1,7 +1,19 @@
 {
   "type": "rax",
   "targets": ["<%- projectTargets.join('", "') %>"],
+  <%_ if (miniappComponentBuildType === 'runtime') {_%>
+    <%_ projectTargets.forEach(function(target) { _%>
+      <%_ if (['miniapp', 'wechat-miniprogram'].includes(target)) {_%>
+  "<%= target %>": {
+    "buildType": "runtime"
+  },
+      <%_ }_%>
+    <%_ })_%>
+  <%_ } _%>
   "plugins": [
     "build-plugin-component"
+    <% if(isAliInternal && projectTargets.indexOf('miniapp') > -1) {%>
+      ,"@ali/build-plugin-miniapp-preview"
+    <%}%>
   ]
 }
