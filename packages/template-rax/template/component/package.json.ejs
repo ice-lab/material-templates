@@ -44,6 +44,9 @@
   },
   "devDependencies": {
     "@alib/build-scripts": "^0.1.0",
+    <% if(isAliInternal && projectTargets.includes('miniapp')) {%>
+      "@ali/build-plugin-miniapp-preview":"^1.1.0",
+    <%}%>
     "@iceworks/spec": "^1.0.0",
     "@types/rax": "^1.0.0",
     "build-plugin-component": "^1.0.0",
