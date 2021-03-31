@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "build-plugin-component",
+    "build-plugin-icestark-module",
+    "build-plugin-fusion",<%- typeof adaptor !== 'undefined' && adaptor ? '\n    "build-plugin-fusion-cool",' : '' %>
+    ["build-plugin-moment-locales", {
+      "locales": ["zh-cn"]
+    }]
+  ]
+}
