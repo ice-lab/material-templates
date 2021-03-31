@@ -1,7 +1,7 @@
 {
   "type": "rax",
   "targets": ["<%- projectTargets.join('", "') %>"],
-  <%_ if (miniappComponentBuildType === 'runtime') {_%>
+  <%_ if (miniappComponentBuildType && miniappComponentBuildType === 'runtime') {_%>
     <%_ projectTargets.forEach(function(target) { _%>
       <%_ if (['miniapp', 'wechat-miniprogram'].includes(target)) {_%>
   "<%= target %>": {
