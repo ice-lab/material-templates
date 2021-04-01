@@ -1,8 +1,12 @@
 ## Changelog
 
+## 0.4.9
+
+- [fix] use `typeof` to judge whether `miniappComponentBuildType` exists
+
 ## 0.4.8
 
-- [fix] add miniappComponentBuildType judge before use to make old rax-cli compatible
+- [fix] add `miniappComponentBuildType` judge before use to make old rax-cli compatible
 
 ## 0.4.7
 
