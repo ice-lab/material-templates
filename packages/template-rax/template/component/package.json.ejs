@@ -4,7 +4,7 @@
   "description": "<%= description %>",
   "main": "lib/index.js",
   "module": "es/index.js",
-  <%_ if (miniappComponentBuildType === 'compile') { -%>
+  <%_ if (typeof miniappComponentBuildType !== 'undefined' && miniappComponentBuildType === 'compile') { -%>
   "miniappConfig": {
     "main": "lib/miniapp/index",
     "main:wechat": "lib/wechat-miniprogram/index"
@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@alib/build-scripts": "^0.1.0",
-    <% if(isAliInternal && projectTargets.includes('miniapp')) {%>
+    <% if(typeof isAliInternal !== 'undefined' && isAliInternal && projectTargets.includes('miniapp')) {%>
       "@ali/build-plugin-miniapp-preview":"^1.1.0",
     <%}%>
     "@iceworks/spec": "^1.0.0",
