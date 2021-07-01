@@ -4,3 +4,4 @@
 
 - [feat] add `exports` field in package.json
 - [feat] use targets as dir name
+- [chore] set `enablePlatformLoader: true` by default
