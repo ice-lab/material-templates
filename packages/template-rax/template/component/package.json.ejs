@@ -10,6 +10,15 @@
     "main:wechat": "lib/wechat-miniprogram/index"
   },
   <%_ } -%>
+  "exports": {
+    ".":{
+      <%_ projectTargets.forEach(function(target) { _%>
+    "<%= target %>": "./es/<%= target %>/index.js",
+      <%_ })_%>
+      "default": "./es/index.js"
+    },
+    "./*": "./*"
+  },
   "files": [
     "build",
     "dist",
@@ -34,7 +43,8 @@
   },
   "dependencies": {
     "rax-text": "^2.0.0",
-    "rax-view": "^2.0.0"
+    "rax-view": "^2.0.0",
+    "universal-env": "^3.0.0"
   },
   "peerDependencies": {
     <%_ if (projectTargets.includes('miniapp') || projectTargets.includes('wechat-miniprogram')) { -%>

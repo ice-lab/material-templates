@@ -1,5 +1,10 @@
 ## Changelog
 
+## 0.4.10
+
+- [feat] add `exports` field in package.json
+- [feat] use targets as dir name
+
 ## 0.4.9
 
 - [fix] use `typeof` to judge whether `miniappComponentBuildType` exists
