@@ -1,10 +1,15 @@
 {
+  "type": "rax",
+  "targets": ["<%- projectTargets.join('", "') %>"],
   "plugins": [
-    [
-      "build-plugin-rax-component",
-      {
-        "targets": ["<%- projectTargets.join('", "') %>"]
-      }
-    ]
-  ]
+    "build-plugin-component"
+  ],
+  <%_ projectTargets.forEach(function(target) { _%>
+    <%_ if (['miniapp', 'wechat-miniprogram'].includes(target)) {_%>
+"<%= target %>": {
+  "buildType": "runtime"
+},
+    <%_ }_%>
+  <%_ })_%>
+  "enablePlatformLoader": true
 }

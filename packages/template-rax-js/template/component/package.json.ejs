@@ -4,9 +4,20 @@
   "description": "<%= description %>",
   "main": "lib/index.js",
   "module": "es/index.js",
+  <%_ if (typeof miniappComponentBuildType !== 'undefined' && miniappComponentBuildType === 'compile') { -%>
   "miniappConfig": {
     "main": "lib/miniapp/index",
     "main:wechat": "lib/wechat-miniprogram/index"
+  },
+  <%_ } -%>
+  "exports": {
+    ".":{
+    <%_ projectTargets.forEach(function(target) { _%>
+    "<%= target %>": "./es/<%= target %>/index.js",
+      <%_ })_%>
+      "default": "./es/index.js"
+    },
+    "./*": "./*"
   },
   "files": [
     "build",
