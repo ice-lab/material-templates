@@ -1,12 +1,14 @@
 {
+  <%_ if (typeof miniappPluginBuildType === 'undefined' || miniappPluginBuildType === 'compile') {_%>
+  "main": "index.js",
   "publicComponents": {
     "logo": "components/Logo/index"
   },
+  <%_ } -%>
   "publicPages": {
     "home": "pages/Home/index"
   },
   "pages": {
     "home": "pages/Home/index"
-  },
-  "main": "index.js"
+  }
 }

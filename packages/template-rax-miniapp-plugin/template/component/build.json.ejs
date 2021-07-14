@@ -1,10 +1,15 @@
 {
+  "targets": ["<%- projectTargets.join('", "') %>"],
+  <%_ if (typeof miniappPluginBuildType !== 'undefined' && miniappPluginBuildType === 'runtime') {_%>
+    <%_ projectTargets.forEach(function(target) { _%>
+      <%_ if (['miniapp', 'wechat-miniprogram'].includes(target)) {_%>
+  "<%= target %>": {
+    "buildType": "runtime"
+  },
+      <%_ }_%>
+    <%_ })_%>
+  <%_ } _%>
   "plugins": [
-    [
-      "build-plugin-rax-miniapp-plugin",
-      {
-        "targets": ["<%- projectTargets.join('", "') %>"]
-      }
-    ]
+    "build-plugin-rax-miniapp-plugin"
   ]
 }
