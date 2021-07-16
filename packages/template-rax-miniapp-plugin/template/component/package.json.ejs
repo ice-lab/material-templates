@@ -27,6 +27,10 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    <%_ if (typeof miniappPluginBuildType !== 'undefined' && miniappPluginBuildType === 'runtime') {_%>
+    "create-app-shared": "^0.2.6",
+    "miniapp-renderer": "^0.1.14",
+    <%_ } -%>
     "rax-image": "^2.0.0",
     "rax-text": "^2.0.0",
     "rax-view": "^2.0.0"
