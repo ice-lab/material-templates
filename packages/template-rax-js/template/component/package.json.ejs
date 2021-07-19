@@ -4,7 +4,7 @@
   "description": "<%= description %>",
   "main": "lib/index.js",
   "module": "es/index.js",
-  <%_ if (typeof miniappComponentBuildType !== 'undefined' && miniappComponentBuildType === 'compile') { -%>
+  <%_ if (!(typeof miniappComponentBuildType !== 'undefined' && miniappComponentBuildType === 'runtime')) { -%>
   "miniappConfig": {
     "main": "lib/miniapp/index",
     "main:wechat": "lib/wechat-miniprogram/index"
