@@ -1,5 +1,7 @@
 {
+  <%_ if (typeof miniappPluginBuildType === 'undefined' || miniappPluginBuildType === 'compile') {_%>
   "usingComponents": {
     "logo": "plugin://myPlugin/logo"
   }
+  <%_ } -%>
 }

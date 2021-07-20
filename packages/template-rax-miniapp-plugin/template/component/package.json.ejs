@@ -27,6 +27,10 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    <%_ if (typeof miniappPluginBuildType !== 'undefined' && miniappPluginBuildType === 'runtime') {_%>
+    "create-app-shared": "^0.2.6",
+    "miniapp-renderer": "^0.1.14",
+    <%_ } -%>
     "rax-image": "^2.0.0",
     "rax-text": "^2.0.0",
     "rax-view": "^2.0.0"
@@ -38,7 +42,7 @@
     "@alib/build-scripts": "^0.1.0",
     "@iceworks/spec": "^1.0.0",
     "@types/rax": "^1.0.0",
-    "build-plugin-rax-miniapp-plugin": "^0.1.0",
+    "build-plugin-rax-miniapp-plugin": "^1.0.0",
     "driver-universal": "^3.1.0",
     "eslint": "^6.8.0",
     "stylelint": "^13.7.2",

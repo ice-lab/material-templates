@@ -1,8 +1,11 @@
+<%_ if (typeof miniappPluginBuildType === 'undefined' || miniappPluginBuildType === 'compile') {_%>
 const plugin = requirePlugin("myPlugin");
-
+<%_ } -%>
 Page({
   onLoad(query) {
+    <%_ if (typeof miniappPluginBuildType === 'undefined' || miniappPluginBuildType === 'compile') {_%>
     plugin.helloApi();
+    <%_ } -%>
   },
   navigateToPlugin() {
     my.navigateTo({
