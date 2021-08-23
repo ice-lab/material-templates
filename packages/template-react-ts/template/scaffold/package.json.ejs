@@ -26,23 +26,18 @@
     "build": "icejs build",
     "screenshot": "../../node_modules/.bin/screenshot -l",
     "prepublishOnly": "npm run build && npm run screenshot",
-    "eslint": "eslint --cache --ext .js,.jsx ./",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
     "eslint:fix": "npm run eslint -- --fix",
     "stylelint": "stylelint \"**/*.{css,scss,less}\"",
     "lint": "npm run eslint && npm run stylelint"
   },
   "dependencies": {
-    "@alifd/next": "^1.19.4",
-    "moment": "^2.24.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "@alifd/theme-design-pro": "^0.x"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@iceworks/spec": "^1.0.0",
-    "build-plugin-fusion": "^0.1.0",
-    "build-plugin-moment-locales": "^0.1.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "ice.js": "^1.0.0",
     "stylelint": "^13.2.0"
   },
@@ -53,8 +48,5 @@
     "name": "<%= npmName %>",
     "title": "<%= title %>",
     "category": "<%= category %>"
-  },
-  "engines": {
-    "node": ">=8.0.0"
   }
 }

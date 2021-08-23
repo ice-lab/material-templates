@@ -10,7 +10,7 @@ const Guide = () => {
 
       <div className={styles.action}>
         <a
-          href="https://ice.work/docs/guide/about"
+          href="https://ice.work"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -19,7 +19,7 @@ const Guide = () => {
         >
           使用文档
         </a>
-        <a href="https://github.com/ice-lab/icejs" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/alibaba/ice" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </div>

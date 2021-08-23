@@ -2,7 +2,7 @@
 
 ### 特性
 
-- React/Fusion/ts/ice-scripts
+- React/icejs/TypeScript
 
 ### 维护者
 

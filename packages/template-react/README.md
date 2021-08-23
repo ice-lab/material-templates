@@ -1,3 +1,8 @@
-# icejs x js 脚手架模板
+## React 模板
 
-用于快速制作项目脚手架
+### 特性
+
+- React/icejs/JavaScript
+### 维护者
+
+@ICE 团队

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Button } from '@alifd/next';
 import styles from './index.module.scss';
 
 const Guide = () => {
@@ -11,21 +10,17 @@ const Guide = () => {
 
       <div className={styles.action}>
         <a
-          href="https://ice.work/docs/guide/about"
+          href="https://ice.work"
           target="_blank"
           rel="noopener noreferrer"
           style={{
             marginRight: 20,
           }}
         >
-          <Button type="primary" size="large">
-            使用文档
-          </Button>
+          使用文档
         </a>
-        <a href="https://github.com/ice-lab/icejs" target="_blank" rel="noopener noreferrer">
-          <Button type="secondary" size="large">
-            GitHub
-          </Button>
+        <a href="https://github.com/alibaba/ice" target="_blank" rel="noopener noreferrer">
+          GitHub
         </a>
       </div>
     </div>
