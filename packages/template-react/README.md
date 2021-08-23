@@ -1,9 +1,3 @@
-## React 标准模板
+# icejs x js 脚手架模板
 
-### 特性
-
-- React/Fusion/js/ice-scripts
-
-### 维护者
-
-@ICE 团队
+用于快速制作项目脚手架
