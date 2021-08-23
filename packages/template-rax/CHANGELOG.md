@@ -1,4 +1,8 @@
-## Changelog
+# Changelog
+
+## 0.4.11
+
+- [chore] eslint 6->7
 
 ## 0.4.10
 
