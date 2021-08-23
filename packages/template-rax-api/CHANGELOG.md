@@ -1,5 +1,9 @@
 ## Changelog
 
+## 0.2.3
+
+- [chore] eslint 6 -> 7
+
 ## 0.2.2
 
 - [feat] add `exports` field in package.json

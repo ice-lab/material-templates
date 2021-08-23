@@ -1,5 +1,9 @@
 ## Changelog
 
+## 0.2.5
+
+- [chore] eslint 6->7
+
 ## 0.2.4
 
 - [fix] adjust `miniappConfig` field generation condition

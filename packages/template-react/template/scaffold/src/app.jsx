@@ -1,8 +1,9 @@
-import { createApp } from 'ice';
+import { runApp } from 'ice';
 
 const appConfig = {
   app: {
     rootId: 'ice-container',
   },
 };
-createApp(appConfig);
+
+runApp(appConfig);

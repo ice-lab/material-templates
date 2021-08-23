@@ -1,9 +1,8 @@
-## React 标准模板
+## React 模板
 
 ### 特性
 
-- React/Fusion/js/ice-scripts
-
+- React/icejs/JavaScript
 ### 维护者
 
 @ICE 团队
