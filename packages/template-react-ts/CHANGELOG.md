@@ -3,7 +3,7 @@
 
 ## 0.7.1
 
-- [component] upgrade `build-scritps` to 1.x
+- [component & block] upgrade `build-scritps` to 1.x
 
 
 ## 0.7.0
