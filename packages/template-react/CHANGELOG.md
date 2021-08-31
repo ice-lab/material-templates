@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.1
+
+- [component] upgrade `build-scritps` to 1.x
+
 ## 0.7.0
 
 - [scaffold&component&block] react 16->17
