@@ -2,7 +2,7 @@
 
 ## 0.4.12
 
-- [component] upgrade `build-scritps` to 1.x
+- [component] upgrade `build-scripts` to 1.x
 
 ## 0.4.11
 
