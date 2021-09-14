@@ -1,7 +1,7 @@
 {
-  "name": "@icedesign/template-rax-js",
-  "version": "0.2.6",
-  "description": "Rax 物料模板(JS)",
+  "name": "@icedesign/template-rax",
+  "version": "0.4.12",
+  "description": "Rax 物料模板",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alibaba/ice/tree/master/packages/template-rax-js"
+    "url": "https://github.com/alibaba/ice/tree/master/packages/template-rax"
   },
   "publishConfig": {
     "access": "public"

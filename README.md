@@ -42,20 +42,6 @@ $ iceworks init component <templateNpmName>
 - 使用场景：无线多端场景
 - 代码地址：[code](/packages/template-rax)
 
-### template-chart
-
-- 特点：React/BizCharts/build-scripts
-- npm 包名：`@icedesign/material-chart-template`
-- 使用场景：图表领域
-- 代码地址：[code](/packages/template-chart)
-
-### template-react-deep
-
-- 特点：React/Fusion(deep)/ice-scripts/TypeScript
-- npm 包名：`@alifd/deep-template`
-- 使用场景：企业智能团队
-- 代码地址：[code](/packages/template-react-deep)
-
 ## 模板开发
 
 ```bash

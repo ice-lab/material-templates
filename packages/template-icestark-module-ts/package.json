@@ -1,7 +1,7 @@
 {
-  "name": "@icedesign/ice-react-ts-material-template",
-  "version": "0.7.1",
-  "description": "自定义物料源的初始模板",
+  "name": "@icedesign/template-icestark-module",
+  "version": "1.0.2",
+  "description": "用于快速初始化 icestark 微模块的模板",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,14 +12,10 @@
     "ice",
     "ice-template"
   ],
-  "author": {
-    "name": "ICE Team",
-    "email": "ice-admin@alibaba-inc.com"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alibaba/ice/tree/master/packages/ice-react-ts-material-template"
+    "url": "https://github.com/alibaba/ice/tree/master/packages/template-icestark-module"
   },
   "publishConfig": {
     "access": "public"

@@ -1,10 +1,8 @@
 # Changelog
 
-
 ## 0.7.1
 
 - [component & block] upgrade `build-scripts` to 1.x
-
 
 ## 0.7.0
 

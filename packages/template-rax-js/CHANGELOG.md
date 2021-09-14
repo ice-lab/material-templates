@@ -1,5 +1,9 @@
 ## Changelog
 
+## 0.2.6
+
+- [component] upgrade `build-scripts` to 1.x
+
 ## 0.2.5
 
 - [chore] eslint 6->7

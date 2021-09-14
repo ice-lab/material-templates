@@ -4,7 +4,7 @@
   "description": "<%= description %>",
   "main": "lib/index.js",
   "module": "es/index.js",
-  <%_ if (!(typeof miniappComponentBuildType !== 'undefined' && miniappComponentBuildType === 'runtime')) { -%>
+  <%_ if (typeof miniappComponentBuildType !== 'undefined' && miniappComponentBuildType === 'compile') { -%>
   "miniappConfig": {
     "main": "lib/miniapp/index",
     "main:wechat": "lib/wechat-miniprogram/index"
@@ -12,7 +12,7 @@
   <%_ } -%>
   "exports": {
     ".":{
-    <%_ projectTargets.forEach(function(target) { _%>
+      <%_ projectTargets.forEach(function(target) { _%>
     "<%= target %>": "./es/<%= target %>/index.js",
       <%_ })_%>
       "default": "./es/index.js"
@@ -35,7 +35,7 @@
   "scripts": {
     "start": "build-scripts start",
     "build": "build-scripts build",
-    "eslint": "eslint --ext .js,.jsx ./",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx ./",
     "eslint:fix": "npm run eslint -- --fix",
     "stylelint": "stylelint \"**/*.{css,scss,less}\"",
     "lint": "npm run eslint && npm run stylelint",
@@ -43,7 +43,8 @@
   },
   "dependencies": {
     "rax-text": "^2.0.0",
-    "rax-view": "^2.0.0"
+    "rax-view": "^2.0.0",
+    "universal-env": "^3.0.0"
   },
   "peerDependencies": {
     <%_ if (projectTargets.includes('miniapp') || projectTargets.includes('wechat-miniprogram')) { -%>
@@ -52,7 +53,11 @@
     "rax": "^1.1.0"
   },
   "devDependencies": {
+    <% if(typeof isAliInternal !== 'undefined' && isAliInternal && projectTargets.includes('miniapp')) {%>
+      "@ali/build-plugin-miniapp-preview":"^1.1.0",
+    <%}%>
     "@iceworks/spec": "^1.0.0",
+    "@types/rax": "^1.0.0",
     "build-plugin-component": "^1.0.0",
     "build-scripts": "^1.1.1",
     "driver-universal": "^3.1.0",
