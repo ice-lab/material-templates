@@ -2,7 +2,7 @@
 
 ## 1.0.2
 
-- [chore] upgrade `build-scritps` to 1.x
+- [chore] upgrade `build-scripts` to 1.x
 
 ## 1.0.1
 
