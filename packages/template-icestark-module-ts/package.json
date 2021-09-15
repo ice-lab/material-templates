@@ -1,6 +1,6 @@
 {
   "name": "@icedesign/template-icestark-module",
-  "version": "1.0.2",
+  "version": "1.0.2-0",
   "description": "用于快速初始化 icestark 微模块的模板",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

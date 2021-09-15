@@ -8,10 +8,7 @@
     "stylelint": "stylelint ./**/*.{css,scss} ",
     "ci": "npm run lint",
     "prettier": "prettier **/* --write",
-    "publish:packages": "ts-node ./scripts/publish.ts"
-  },
-  "dependencies": {
-    "typescript": "^3.7.3"
+    "publish": "ts-node ./scripts/publish.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
@@ -19,10 +16,13 @@
     "@types/node": "^14.14.6",
     "axios": "^0.19.2",
     "eslint": "^6.8.0",
+    "fs-extra": "^10.0.0",
     "husky": "^4.3.0",
+    "ice-npm-utils": "^2.1.2",
     "prettier": "^2.1.2",
     "stylelint": "^13.7.2",
-    "ts-node": "^8.10.2"
+    "ts-node": "^8.10.2",
+    "typescript": "^3.7.3"
   },
   "husky": {
     "hooks": {
