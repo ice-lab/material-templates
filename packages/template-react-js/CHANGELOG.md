@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.2
+
+- [component] use `disableGenerateStyle: true` by default
+
 ## 0.7.1
 
 - [component & block] upgrade `build-scripts` to 1.x
