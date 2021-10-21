@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.7.2
+
+- [component] use `disableGenerateStyle: true` by default
 
 ## 0.7.1
 
