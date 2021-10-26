@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'ice';
-import styles from './index.module.scss';
+import styles from './index.module.css';
 
 export default function NotFound() {
   return (

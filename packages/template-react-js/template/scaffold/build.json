@@ -1,4 +1,5 @@
 {
   "publicPath": "./",
+  "vite": true,
   "plugins": []
 }

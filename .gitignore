@@ -16,3 +16,6 @@ build
 .tmp/
 npmrc
 .history
+
+# 本地调试
+packages/*/template/scaffold/package.json
