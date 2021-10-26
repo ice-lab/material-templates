@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.3
+
+- [scaffold] new jsx transform & use vite
+
 ## 0.7.2
 
 - [component] use `disableGenerateStyle: true` by default
