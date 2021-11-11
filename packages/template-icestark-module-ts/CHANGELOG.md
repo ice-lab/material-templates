@@ -1,5 +1,9 @@
 # changelog
 
+## 1.0.3
+
+- [fix] replace `build-plugin-icestark-module` to `build-plugin-stark-module`
+
 ## 1.0.2
 
 - [chore] upgrade `build-scripts` to 1.x
