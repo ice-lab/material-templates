@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.13
+
+- [chore] remove using targets as dir name
+
 ## 0.4.12
 
 - [component] upgrade `build-scripts` to 1.x
