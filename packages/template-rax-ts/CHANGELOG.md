@@ -1,5 +1,10 @@
 # Changelog
 
+
+## 0.4.13
+
+- [chore] add `isolatedModules: true`
+
 ## 0.4.12
 
 - [component] upgrade `build-scripts` to 1.x

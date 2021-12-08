@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.5
+
+- [chore] add `isolatedModules: true`
+
 ## 0.7.4
 
 - [scaffold] update ice map path in tsconfig.json
