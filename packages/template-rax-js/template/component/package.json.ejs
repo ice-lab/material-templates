@@ -57,6 +57,12 @@
     "title": "<%= title %>",
     "category": "<%= category %>"
   },
+  "exports": {
+    ".":{
+      "default": "./es/index.js"
+    },
+    "./*": "./*"
+  },
   "publishConfig": {
     "access": "public"
   },
