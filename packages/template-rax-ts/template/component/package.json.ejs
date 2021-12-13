@@ -10,15 +10,6 @@
     "main:wechat": "lib/wechat-miniprogram/index"
   },
   <%_ } -%>
-  "exports": {
-    ".":{
-      <%_ projectTargets.forEach(function(target) { _%>
-    "<%= target %>": "./es/<%= target %>/index.js",
-      <%_ })_%>
-      "default": "./es/index.js"
-    },
-    "./*": "./*"
-  },
   "files": [
     "build",
     "dist",
@@ -70,6 +61,12 @@
     "name": "<%= name %>",
     "title": "<%= title %>",
     "category": "<%= category %>"
+  },
+  "exports": {
+    ".":{
+      "default": "./es/index.js"
+    },
+    "./*": "./*"
   },
   "publishConfig": {
     "access": "public"
