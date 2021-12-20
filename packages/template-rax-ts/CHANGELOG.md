@@ -1,9 +1,12 @@
 # Changelog
 
+## 0.4.14
+
+- [chore] add `isolatedModules: true`
 
 ## 0.4.13
 
-- [chore] add `isolatedModules: true`
+- [chore] remove using targets as dir name
 
 ## 0.4.12
 
