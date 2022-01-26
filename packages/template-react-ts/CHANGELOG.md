@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.6
+
+- [component] typo of interface
+
 ## 0.7.5
 
 - [component] use `docGenIncludes` by default
