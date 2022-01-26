@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 export default function <%= className %>(props) {
-  const { type, ...others } = props;
+  const { title, ...others } = props;
 
   return (
     <div className="<%= name %>" {...others}>Hello <%= className %></div>
@@ -10,7 +11,9 @@ export default function <%= className %>(props) {
 }
 
 <%= className %>.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 <%= className %>.defaultProps = {
+  title: "<%= name %>"
 };

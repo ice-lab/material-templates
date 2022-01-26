@@ -1,12 +1,13 @@
 import * as React from 'react';
 import './index.css';
 
-type ComponentProps = {
-  title: string,
+interface ComponentProps = {
+  /** Title for <%= className %>. */
+  title: string;
 };
 
 export default function <%= className %>(props: ComponentProps) {
-  const { type, ...others } = props;
+  const { title, ...others } = props;
 
   return (
     <div className="<%= name %>" {...others}>Hello <%= className %></div>

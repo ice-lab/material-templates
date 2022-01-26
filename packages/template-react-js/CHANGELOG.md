@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.5
+
+- [component] use `docGenIncludes` by default
+
 ## 0.7.4
 
 - [scaffold] update ice map path in tsconfig.json
