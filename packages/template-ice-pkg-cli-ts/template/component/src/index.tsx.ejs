@@ -1,0 +1,15 @@
+import * as React from 'react';
+import './index.css';
+
+interface ComponentProps {
+  /** Title for <%= className %>. */
+  title: string;
+};
+
+export default function <%= className %>(props: ComponentProps) {
+  const { title, ...others } = props;
+
+  return (
+    <div className="<%= name %>" {...others}>Hello <%= className %></div>
+  );
+}
