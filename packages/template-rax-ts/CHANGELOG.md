@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.14
+
+- [refactor] use `build-plugin-component` instead of `build-plugin-rax-component`
+
 ## 0.4.13
 
 - [chore] remove using targets as dir name
