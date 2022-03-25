@@ -1,5 +1,5 @@
 {
-  "name": "@icedesign/ice-pkg-cli-ts",
+  "name": "@ice/template-pkg-react",
   "version": "1.0.0",
   "description": "自定义物料源的初始模板",
   "scripts": {

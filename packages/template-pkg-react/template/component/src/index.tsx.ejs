@@ -7,9 +7,9 @@ interface ComponentProps {
 };
 
 export default function <%= className %>(props: ComponentProps) {
-  const { title, ...others } = props;
+  const { title } = props;
 
   return (
-    <div className="<%= name %>" {...others}>Hello <%= className %></div>
+    <div className="<%= name %>">Hello <%= className %></div>
   );
 }
