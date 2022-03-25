@@ -1,0 +1,61 @@
+{
+  "name": "<%= npmName %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "files": [
+    "demo/",
+    "es/",
+    "lib/",
+    "esnext",
+    "build/"
+  ],
+  "module": "es/index.js",
+  "exports": {
+    "esnext": "./esnext/index.js",
+    "import": "./es/index.js",
+    "default": "./es/index.js"
+  },
+  "sideEffects": [
+    "dist/*",
+    "*.scss",
+    "*.less",
+    "*.css"
+  ],
+  "scripts": {
+    "start": "pkg-cli start -- --doc",
+    "build": "pkg-cli build",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "keywords": [
+    "ice",
+    "react",
+    "component"
+  ],
+  "devDependencies": {
+    "@ice/pkg-cli": "^1.0.0-beta.3",
+    "@ice/pkg-plugin-docusaurus": "^1.0.0-beta.0",
+    "@iceworks/spec": "^1.0.0",
+    "eslint": "^7.0.0",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "stylelint": "^13.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16 || ^17"
+  },
+  "componentConfig": {
+    "name": "<%= name %>",
+    "title": "<%= title %>",
+    "category": "<%= category %>"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}
