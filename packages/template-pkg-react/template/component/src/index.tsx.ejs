@@ -4,12 +4,12 @@ import './index.css';
 interface ComponentProps {
   /** Title for <%= className %>. */
   title: string;
-};
+}
 
 export default function <%= className %>(props: ComponentProps) {
-  const { title } = props;
+  const { title = 'Hello World!' } = props;
 
   return (
-    <div className="<%= name %>">Hello <%= className %></div>
+    <div className="<%= name %>">{title}</div>
   );
 }

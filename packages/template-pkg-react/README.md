@@ -1,5 +1,1 @@
-## <%= title %>
-
-<%= npmName %>
-
-<%= description %>
+## React template for `@ice/pkg-cli`
