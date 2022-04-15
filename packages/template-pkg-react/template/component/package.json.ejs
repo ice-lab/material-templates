@@ -9,11 +9,10 @@
     "esnext",
     "build/"
   ],
-  "module": "es/index.js",
+  "module": "esm/index.js",
   "exports": {
-    "esnext": "./esnext/index.js",
-    "import": "./es/index.js",
-    "default": "./es/index.js"
+    "esnext": "./es2017/index.js",
+    "import": "./esm/index.js"
   },
   "sideEffects": [
     "dist/*",
@@ -22,8 +21,8 @@
     "*.css"
   ],
   "scripts": {
-    "start": "pkg-cli start -- --doc",
-    "build": "pkg-cli build",
+    "start": "ice-pkg start",
+    "build": "ice-pkg build",
     "prepublishOnly": "npm run build",
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
     "eslint:fix": "npm run eslint -- --fix",
@@ -36,8 +35,8 @@
     "component"
   ],
   "devDependencies": {
-    "@ice/pkg-cli": "^1.0.0-beta.3",
-    "@ice/pkg-plugin-docusaurus": "^1.0.0-beta.0",
+    "@ice/pkg": "^1.0.0-rc.0",
+    "@ice/pkg-plugin-docusaurus": "^1.0.0-rc.0",
     "@iceworks/spec": "^1.0.0",
     "eslint": "^7.0.0",
     "@types/react": "^17.0.2",
