@@ -4,14 +4,14 @@
   "description": "<%= description %>",
   "files": [
     "demo/",
-    "es/",
-    "lib/",
-    "esnext",
+    "esm/",
+    "cjs/",
+    "es2017",
     "build/"
   ],
   "module": "esm/index.js",
   "exports": {
-    "esnext": "./es2017/index.js",
+    "es2017": "./es2017/index.js",
     "import": "./esm/index.js"
   },
   "sideEffects": [
@@ -34,6 +34,9 @@
     "react",
     "component"
   ],
+  "dependencies": {
+    "@swc/helpers": "^0.3.8"
+  },
   "devDependencies": {
     "@ice/pkg": "^1.0.0-rc.0",
     "@ice/pkg-plugin-docusaurus": "^1.0.0-rc.0",
