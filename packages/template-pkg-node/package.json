@@ -1,5 +1,5 @@
 {
-  "name": "@ice/template-pkg-rax",
+  "name": "@ice/template-pkg-node",
   "version": "1.0.0",
   "description": "自定义物料源的初始模板",
   "scripts": {
@@ -19,12 +19,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ice-lab/material-templates.git"
+    "url": "https://github.com/alibaba/ice/tree/master/packages/template-ice-pkg-cli-ts"
   },
   "publishConfig": {
     "access": "public"
   },
   "materialConfig": {
-    "type": "rax"
+    "type": "node"
   }
 }

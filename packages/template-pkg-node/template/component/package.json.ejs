@@ -2,6 +2,7 @@
   "name": "<%= npmName %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
+  "type": "module",
   "files": [
     "esm",
     "cjs",
@@ -9,10 +10,9 @@
     "dist",
     "build"
   ],
-  "module": "esm/index.js",
+  "module": "es2017/index.js",
   "exports": {
-    "es2017": "./es2017/index.js",
-    "import": "./esm/index.js"
+    "import": "./es2017/index.js"
   },
   "sideEffects": [
     "dist/*",
