@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+
+- [feat] update usage in doc
+- [feat] use css modules defaultly
+
 ## 1.1.1
 
 - [fix] add `@swc/helper` to dependencies.
