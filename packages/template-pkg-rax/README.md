@@ -1,1 +1,1 @@
-## React template for `@ice/pkg`
+## Rax template for `@ice/pkg`

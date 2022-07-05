@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- [refactor] update build.config.ts to build.config.mts
+
 ## 1.2.0
 
 - [feat] update usage in doc

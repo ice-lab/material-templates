@@ -1,1 +1,1 @@
-## React template for `@ice/pkg`
+## Node module template for `@ice/pkg`
