@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+- [chore] update pkg related package version to latest
+
 ## 1.2.1
 
 - [refactor] update build.config.ts to build.config.mts
