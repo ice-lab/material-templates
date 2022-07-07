@@ -1,10 +1,6 @@
 {
   "name": "@ice/template-pkg-web",
   "version": "1.0.2",
-  "description": "自定义物料源的初始模板",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "files": [
     "template"
   ],
