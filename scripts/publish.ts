@@ -20,7 +20,7 @@ if (!branchName) {
     'template-rax-js', 'template-rax-miniapp-plugin-ts',
     'template-rax-ts', 'template-react-js',
     'template-react-ts', 'template-vue',
-    'template-pkg-react',
+    'template-pkg-react', 'template-pkg-rax', 'template-pkg-web', 'template-pkg-node',
   ];
 
   for (const pkgDir of packageDirs) {
