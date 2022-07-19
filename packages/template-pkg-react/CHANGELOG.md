@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.2.2
+
+- [chore] update pkg related package version to latest
+
+## 1.2.1
+
+- [refactor] update build.config.ts to build.config.mts
+
+## 1.2.0
+
+- [feat] update usage in doc
+- [feat] use css modules defaultly
+
 ## 1.1.1
 
 - [fix] add `@swc/helper` to dependencies.

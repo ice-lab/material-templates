@@ -1,6 +1,6 @@
 {
-  "name": "@ice/template-pkg-react",
-  "version": "1.2.2",
+  "name": "@ice/template-pkg-web",
+  "version": "1.0.2",
   "files": [
     "template"
   ],
@@ -15,12 +15,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ice-lab/material-templates/tree/master/packages/template-pkg-react"
+    "url": "https://github.com/ice-lab/material-templates/tree/master/packages/template-pkg-web"
   },
   "publishConfig": {
     "access": "public"
   },
   "materialConfig": {
-    "type": "react"
+    "type": "web"
   }
 }
