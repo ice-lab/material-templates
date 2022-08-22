@@ -11,9 +11,11 @@
   ],
   "module": "esm/index.js",
   "exports": {
-    "es2017": "./es2017/index.js",
-    "import": "./esm/index.js",
-    ".": "./esm/index.js"
+    ".": {
+      "import": "./esm/index.js",
+      "es2017": "./es2017/index.js"
+    },
+    "./*": "./*"
   },
   "sideEffects": [
     "dist/*",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+- [fix] update exports field to remove warning
+
 ## 1.0.2
 
 - [chore] update pkg related package version to latest
