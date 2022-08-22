@@ -12,8 +12,10 @@
   ],
   "module": "es2017/index.js",
   "exports": {
-    ".": "./es2017/index.js",
-    "import": "./es2017/index.js"
+    ".": {
+      "import": "./es2017/index.js"
+    },
+    "./*": "./*"
   },
   "sideEffects": [
     "dist/*",
