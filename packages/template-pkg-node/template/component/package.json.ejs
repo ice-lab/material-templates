@@ -11,9 +11,11 @@
     "build"
   ],
   "module": "es2017/index.js",
+  "types": "es2017/index.d.ts",
   "exports": {
     ".": {
-      "import": "./es2017/index.js"
+      "es2017": "./es2017/index.js",
+      "default": "./es2017/index.js"
     },
     "./*": "./*"
   },
