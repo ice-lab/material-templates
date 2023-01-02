@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.4
+
+- [feat] generate cjs files as default
+- [feat] add cjs main field in `package.json`
+- [chore] update `tsconfig.json`, `.gitignore` and `.eslintignore` template
+- [chore] remove stylelint dependency and script
+- 
+
 ## 1.0.3
 
 - [fix] update exports field to remove warning
