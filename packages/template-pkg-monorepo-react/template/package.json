@@ -1,0 +1,29 @@
+{
+  "name": "monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pnpm packages:start & pnpm docs:start",
+    "build": "pnpm packages:build & pnpm docs:build",
+    "packages:start": "",
+    "packages:build": "",
+    "docs:start": "ice-pkg start",
+    "docs:build": "ice-pkg build",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "pnpm eslint --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
+    "stylelint:fix": "pnpm stylelint --fix",
+    "lint": "pnpm eslint && pnpm stylelint",
+    "lint:fix": "pnpm eslint:fix && pnpm stylelint:fix"
+  },
+  "devDependencies": {
+    "@ice/pkg": "^1.4.0",
+    "@ice/pkg-plugin-docusaurus": "^1.4.1",
+    "@iceworks/spec": "^1.0.0",
+    "eslint": "^7.0.0",
+    "stylelint": "^13.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "packageManager": "pnpm@7.22.0"
+}

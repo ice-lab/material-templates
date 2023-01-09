@@ -1,0 +1,51 @@
+{
+  "name": "@ali/component-a",
+  "version": "0.1.0",
+  "description": "组件功能描述",
+  "files": [
+    "esm",
+    "cjs",
+    "es2017",
+    "dist",
+    "build"
+  ],
+  "module": "esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./esm/index.js",
+      "es2017": "./es2017/index.js"
+    },
+    "./*": "./*"
+  },
+  "sideEffects": [
+    "dist/*",
+    "*.scss",
+    "*.less",
+    "*.css"
+  ],
+  "scripts": {
+    "start": "ice-pkg start",
+    "build": "ice-pkg build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ice",
+    "react",
+    "component"
+  ],
+  "devDependencies": {
+    "@ice/pkg": "^1.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "react": "^17 || ^18"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
+  },
+  "license": "MIT"
+}
