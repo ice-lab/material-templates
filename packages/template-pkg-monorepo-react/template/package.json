@@ -5,8 +5,8 @@
   "scripts": {
     "start": "pnpm packages:start & pnpm docs:start",
     "build": "pnpm packages:build & pnpm docs:build",
-    "packages:start": "",
-    "packages:build": "",
+    "packages:start": "pnpm --parallel -r run start",
+    "packages:build": "pnpm -r run build",
     "docs:start": "ice-pkg start",
     "docs:build": "ice-pkg build",
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",

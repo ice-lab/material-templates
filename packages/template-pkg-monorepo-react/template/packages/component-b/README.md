@@ -1,15 +1,15 @@
-# @ali/component-a
+# @ali/component-b
 
 组件功能描述
 
 ## Install
 
 ```bash
-$ npm i @ali/component-a --save
+$ npm i @ali/component-b --save
 ```
 
 ## Usage
 
 ```jsx
-import ComponentA from '@ali/component-a';
+import ComponentB from '@ali/component-b';
 ```
