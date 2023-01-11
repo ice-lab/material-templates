@@ -1,0 +1,32 @@
+{
+  "name": "lib-b",
+  "version": "0.1.0",
+  "description": "组件功能描述",
+  "type": "module",
+  "files": [
+    "es2017"
+  ],
+  "module": "es2017/index.js",
+  "exports": {
+    ".": {
+      "import": "./es2017/index.js"
+    },
+    "./*": "./*"
+  },
+  "scripts": {
+    "start": "ice-pkg start",
+    "build": "ice-pkg build"
+  },
+  "keywords": [
+    "ice",
+    "js",
+    "library"
+  ],
+  "devDependencies": {
+    "@ice/pkg": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@ice/template-pkg-monorepo-node",
+  "version": "1.0.0",
+  "files": [
+    "template"
+  ],
+  "keywords": [
+    "icepkg",
+    "icepkg-template",
+    "icepkg-monorepo"
+  ],
+  "author": {
+    "name": "ICE Team",
+    "email": "ice-admin@alibaba-inc.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ice-lab/material-templates/tree/master/packages/template-pkg-monorepo-node"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "materialConfig": {
+    "type": "node"
+  }
+}
