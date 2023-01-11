@@ -10,11 +10,7 @@
     "docs:start": "ice-pkg start",
     "docs:build": "ice-pkg build",
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
-    "eslint:fix": "pnpm eslint --fix",
-    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
-    "stylelint:fix": "pnpm stylelint --fix",
-    "lint": "pnpm eslint && pnpm stylelint",
-    "lint:fix": "pnpm eslint:fix && pnpm stylelint:fix"
+    "eslint:fix": "pnpm eslint --fix"
   },
   "devDependencies": {
     "@ice/pkg": "^1.4.0",
@@ -25,8 +21,7 @@
     "lib-c": "link:packages/lib-c",
     "eslint": "^7.0.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "stylelint": "^13.0.0"
+    "react-dom": "^17.0.2"
   },
   "packageManager": "pnpm@7.22.0"
 }
