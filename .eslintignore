@@ -5,4 +5,6 @@ build/
 coverage/
 demo/
 es/
+esm/
+es2017/
 examples/
