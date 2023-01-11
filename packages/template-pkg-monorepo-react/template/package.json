@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "pnpm packages:start & pnpm docs:start",
-    "build": "pnpm packages:build & pnpm docs:build",
+    "build": "pnpm packages:build && pnpm docs:build",
     "packages:start": "pnpm --parallel -r run start",
     "packages:build": "pnpm -r run build",
     "docs:start": "ice-pkg start",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@ice/pkg": "^1.4.0",
-    "@ice/pkg-plugin-docusaurus": "^1.4.3-beta.1",
+    "@ice/pkg-plugin-docusaurus": "^1.4.2-beta.0",
     "@iceworks/spec": "^1.0.0",
     "component-a": "link:packages/component-a",
     "component-b": "link:packages/component-b",

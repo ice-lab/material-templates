@@ -1,1 +1,17 @@
-{}
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react",
+    "noEmit": true,
+    "moduleResolution": "node",
+    "lib": ["ES2017", "DOM"],
+    "sourceMap": true,
+    "allowJs": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+}
