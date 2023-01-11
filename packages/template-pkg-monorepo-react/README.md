@@ -1,1 +1,1 @@
-## Node module template for `@ice/pkg`
+## React component monorepo template. Based on `@ice/pkg`.
