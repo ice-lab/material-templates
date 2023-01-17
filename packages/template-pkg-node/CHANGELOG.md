@@ -1,12 +1,14 @@
 # Changelog
 
+## 1.0.5
+
+- [feat] export es2017 types
+- [chore] update `tsconfig.json`, `.gitignore` and `.eslintignore` template
+- [chore] remove stylelint dependency and scripts
+
 ## 1.0.4
 
-- [feat] generate cjs files as default
-- [feat] add cjs main field in `package.json`
-- [chore] update `tsconfig.json`, `.gitignore` and `.eslintignore` template
-- [chore] remove stylelint dependency and script
-- 
+- [fix] update exports field and add types
 
 ## 1.0.3
 
