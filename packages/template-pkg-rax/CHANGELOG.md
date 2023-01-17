@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+
+- [fix] update exports field and add types
+
 ## 1.0.3
 
 - [fix] update exports field to remove warning
