@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.5
+
+- [feat] export esm and es2017 types
+- [feat] add main export
+- [chore] remove useless files which will be published to npm
+- [chore] remove style-unit from devDependencies
+
 ## 1.2.4
 
 - [fix] update exports field and add types

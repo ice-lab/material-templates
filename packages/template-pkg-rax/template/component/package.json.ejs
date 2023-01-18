@@ -4,17 +4,23 @@
   "description": "<%= description %>",
   "files": [
     "esm",
-    "cjs",
     "es2017",
-    "dist",
-    "build"
+    "cjs",
+    "dist"
   ],
+  "main": "esm/index.js",
   "module": "esm/index.js",
   "types": "esm/index.d.ts",
   "exports": {
     ".": {
-      "es2017": "./es2017/index.js",
-      "default": "./esm/index.js"
+      "es2017": {
+        "types": "./es2017/index.d.ts",
+        "default": "./es2017/index.js"
+      },
+      "default": {
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
+      }
     },
     "./*": "./*"
   },
@@ -48,7 +54,6 @@
     "rax": "^1.2.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "style-unit": "^3.0.4",
     "stylelint": "^13.7.2"
   },
   "peerDependencies": {
