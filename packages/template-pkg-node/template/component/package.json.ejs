@@ -2,6 +2,12 @@
   "name": "<%= npmName %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
+  "files": [
+    "esm",
+    "es2017",
+    "cjs",
+    "dist"
+  ],
   "type": "module",
   "main": "es2017/index.js",
   "module": "es2017/index.js",
@@ -19,12 +25,7 @@
     },
     "./*": "./*"
   },
-  "files": [
-    "es2017"
-  ],
-  "engines": {
-    "node": ">=v14.16.0"
-  },
+  "sideEffects": false,
   "scripts": {
     "start": "ice-pkg start",
     "build": "ice-pkg build",
