@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.6
+
+- [feat] add inner types(`src/typings.d.ts`)
+
 ## 1.2.5
 
 - [feat] export esm and es2017 types
