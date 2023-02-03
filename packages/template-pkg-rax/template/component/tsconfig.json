@@ -2,7 +2,8 @@
   "compilerOptions": {
     "module": "ESNext",
     "target": "ESNext",
-    "jsx": "react",
+    "jsx": "preserve",
+    "jsxFactory": "createElement",
     "moduleResolution": "node",
     "lib": ["ES2017", "DOM"],
     "sourceMap": true,

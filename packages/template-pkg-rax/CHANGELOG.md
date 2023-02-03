@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.7
+
+- [fix] hinted to import react in rax component
+
 ## 1.0.6
 
 - [feat] add inner types(`src/typings.d.ts`)
