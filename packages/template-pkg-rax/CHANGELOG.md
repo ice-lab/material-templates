@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8
+
+- [feat] add `@swc/helpers` and `@ice/jsx-runtime` dependencies
+
 ## 1.0.7
 
 - [fix] hinted to import react in rax component

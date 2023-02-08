@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.7
+
+- [feat] add `@swc/helpers` to dependencies
+
 ## 1.0.6
 
 - [feat] add inner types(`src/typings.d.ts`)
