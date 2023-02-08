@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.7
+
+- [fix] tsconfig.json syntax error
+
 ## 1.2.6
 
 - [feat] add inner types(`src/typings.d.ts`)
