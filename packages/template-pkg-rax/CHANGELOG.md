@@ -2,7 +2,7 @@
 
 ## 1.0.8
 
-- [feat] add `@swc/helpers` and `@ice/jsx-runtime` dependencies
+- [feat] add `@swc/helpers` dependencies
 
 ## 1.0.7
 
