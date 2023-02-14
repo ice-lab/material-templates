@@ -1,8 +1,13 @@
 {
   "name": "@ice/template-pkg-monorepo-node",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "files": [
-    "template"
+    "template",
+    "!template/component/.docusaurus",
+    "!template/component/build",
+    "!template/component/pnpm-lock.yaml",
+    "!template/**/node_modules",
+    "!template/**/es2017"
   ],
   "keywords": [
     "icepkg",

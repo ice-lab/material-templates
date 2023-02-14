@@ -2,7 +2,13 @@
   "name": "@ice/template-pkg-monorepo-react",
   "version": "1.0.4",
   "files": [
-    "template"
+    "template",
+    "!template/component/.docusaurus",
+    "!template/component/build",
+    "!template/component/pnpm-lock.yaml",
+    "!template/**/node_modules",
+    "!template/**/es2017",
+    "!template/**/esm"
   ],
   "keywords": [
     "icepkg",
