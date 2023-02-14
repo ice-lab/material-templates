@@ -4,16 +4,23 @@
   "description": "<%= description %>",
   "files": [
     "esm",
-    "cjs",
     "es2017",
-    "dist",
-    "build"
+    "cjs",
+    "dist"
   ],
+  "main": "esm/index.js",
   "module": "esm/index.js",
+  "types": "esm/index.d.ts",
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "es2017": "./es2017/index.js"
+      "es2017": {
+        "types": "./es2017/index.d.ts",
+        "default": "./es2017/index.js"
+      },
+      "default": {
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
+      }
     },
     "./*": "./*"
   },
@@ -37,6 +44,10 @@
     "react",
     "component"
   ],
+  "dependencies": {
+    "@swc/helpers": "^0.4.14",
+    "@ice/jsx-runtime": "^0.2.0"
+  },
   "devDependencies": {
     "@ice/pkg": "^1.0.0",
     "@ice/pkg-plugin-docusaurus": "^1.0.0",
@@ -46,7 +57,6 @@
     "react-dom": "^18.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "style-unit": "^3.0.4",
     "stylelint": "^13.7.2"
   },
   "peerDependencies": {

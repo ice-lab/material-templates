@@ -2,46 +2,50 @@
   "name": "<%= npmName %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
-  "type": "module",
   "files": [
     "esm",
-    "cjs",
     "es2017",
-    "dist",
-    "build"
+    "cjs",
+    "dist"
   ],
+  "type": "module",
+  "main": "es2017/index.js",
   "module": "es2017/index.js",
+  "types": "es2017/index.d.ts",
   "exports": {
     ".": {
-      "import": "./es2017/index.js"
+      "es2017": {
+        "types": "./es2017/index.d.ts",
+        "default": "./es2017/index.js"
+      },
+      "default": {
+        "types": "./es2017/index.d.ts",
+        "default": "./es2017/index.js"
+      }
     },
     "./*": "./*"
   },
-  "sideEffects": [
-    "dist/*",
-    "*.scss",
-    "*.less",
-    "*.css"
-  ],
+  "sideEffects": false,
   "scripts": {
     "start": "ice-pkg start",
     "build": "ice-pkg build",
     "prepublishOnly": "npm run build",
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
-    "eslint:fix": "npm run eslint -- --fix",
-    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
-    "lint": "npm run eslint && npm run stylelint"
+    "eslint:fix": "npm run eslint -- --fix"
   },
   "keywords": [
-    "ice",
+    "icepkg",
     "js",
+    "node",
     "library"
   ],
+  "dependencies": {
+    "@swc/helpers": "^0.4.14"
+  },
   "devDependencies": {
     "@ice/pkg": "^1.0.0",
     "@iceworks/spec": "^1.0.0",
-    "eslint": "^7.0.0",
-    "stylelint": "^13.7.2"
+    "eslint": "^7.0.0"
   },
   "publishConfig": {
     "access": "public"

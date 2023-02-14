@@ -1,14 +1,11 @@
 {
-  "compileOnSave": false,
-  "buildOnSave": false,
   "compilerOptions": {
-    "outDir": "build",
-    "module": "esnext",
-    "target": "esnext",
+    "module": "ESNext",
+    "target": "ESNext",
     "jsx": "preserve",
     "jsxFactory": "createElement",
     "moduleResolution": "node",
-    "lib": ["es6", "dom"],
+    "lib": ["ES2017", "DOM"],
     "sourceMap": true,
     "allowJs": true,
     "noUnusedLocals": true,
@@ -17,6 +14,5 @@
     "noImplicitAny": true,
     "skipLibCheck": true
   },
-  "include": ["src/*.ts", "src/*.tsx"],
-  "exclude": ["node_modules", "build", "public"]
+  "include": ["src"],
 }
