@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.8
+
+- [feat] add `@swc/helpers` and `@ice/jsx-runtime` dependencies
+
 ## 1.2.7
 
 - [fix] tsconfig.json syntax error
