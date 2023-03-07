@@ -4,7 +4,10 @@
   "description": "组件功能描述",
   "type": "module",
   "files": [
-    "es2017"
+    "esm",
+    "es2017",
+    "cjs",
+    "dist"
   ],
   "module": "es2017/index.js",
   "exports": {

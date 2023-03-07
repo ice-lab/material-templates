@@ -6,8 +6,7 @@
     "esm",
     "cjs",
     "es2017",
-    "dist",
-    "build"
+    "dist"
   ],
   "module": "esm/index.js",
   "exports": {
