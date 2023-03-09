@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8
+
+- [feat] use `@applint/spec` instead of `@iceworks/spec`
+
 ## 1.0.7
 
 - [feat] add `@swc/helpers` to dependencies
