@@ -22,9 +22,9 @@
     "@types/react": "^18.0.28",
     "clsx": "^1.2.1",
     "eslint": "^7.0.0",
-    "lib-a": "link:packages/lib-a",
-    "lib-b": "link:packages/lib-b",
-    "lib-c": "link:packages/lib-c",
+    "lib-a": "workspace:*",
+    "lib-b": "workspace:*",
+    "lib-c": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^4.1.2"
