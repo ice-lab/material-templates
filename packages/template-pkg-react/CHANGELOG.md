@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.9
+
+- [feat] use `@applint/spec` instead of `@iceworks/spec`
+
 ## 1.2.8
 
 - [feat] add `@swc/helpers` and `@ice/jsx-runtime` dependencies

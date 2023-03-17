@@ -1,7 +1,8 @@
-const { getESLintConfig } = require('@iceworks/spec');
+const { getESLintConfig } = require('@applint/spec');
 
-module.exports = getESLintConfig('react-ts', {
-  env: {
-    jest: true
-  },
-});
+module.exports = getESLintConfig(
+  'rax-ts',
+<% if (locals.esLintConfigOptions) { _%>
+  <%- esLintConfigOptions %>
+<% } _%>
+);
