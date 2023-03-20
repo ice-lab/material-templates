@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.10
+
+- [fix] use `@applint/spec` instead of `@iceworks/spec` in `.stylelintrc.cjs.ejs`
+
 ## 1.2.9
 
 - [feat] use `@applint/spec` instead of `@iceworks/spec`
