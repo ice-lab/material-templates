@@ -1,0 +1,33 @@
+{
+  "name": "node-lib-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pnpm packages:start & pnpm docs:start",
+    "build": "pnpm packages:build && pnpm docs:build",
+    "packages:start": "pnpm --parallel -r run start",
+    "packages:build": "pnpm -r run build",
+    "docs:start": "ice-pkg start",
+    "docs:build": "ice-pkg build",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "pnpm eslint --fix"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^2.3.1",
+    "@docusaurus/theme-classic": "^2.3.1",
+    "@ice/pkg": "^1.5.0",
+    "@ice/pkg-plugin-docusaurus": "^1.4.3",
+    "@iceworks/spec": "^1.0.0",
+    "@tsconfig/docusaurus": "^1.0.6",
+    "@types/react": "^18.0.28",
+    "clsx": "^1.2.1",
+    "eslint": "^7.0.0",
+    "lib-a": "workspace:*",
+    "lib-b": "workspace:*",
+    "lib-c": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.1.2"
+  },
+  "packageManager": "pnpm@7.22.0"
+}
