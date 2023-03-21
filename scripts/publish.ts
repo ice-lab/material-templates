@@ -21,7 +21,7 @@ if (!branchName) {
     'template-rax-ts', 'template-react-js',
     'template-react-ts', 'template-vue',
     'template-pkg-react', 'template-pkg-rax', 'template-pkg-web', 'template-pkg-node',
-    '@ice/template-pkg-monorepo-react', '@ice/template-pkg-monorepo-node',
+    'template-pkg-monorepo-react', 'template-pkg-monorepo-node',
   ];
 
   for (const pkgDir of packageDirs) {
