@@ -21,14 +21,14 @@ if (!branchName) {
     'template-rax-ts', 'template-react-js',
     'template-react-ts', 'template-vue',
     'template-pkg-react', 'template-pkg-rax', 'template-pkg-web', 'template-pkg-node',
+    'template-pkg-monorepo-react', 'template-pkg-monorepo-node',
   ];
 
   for (const pkgDir of packageDirs) {
     // eslint-disable-next-line no-await-in-loop
     await publishPackage(join(rootDir, 'packages', pkgDir));
   }
-
-})().catch(err => {
+})().catch((err) => {
   console.error(err);
   process.exit(1);
 });
