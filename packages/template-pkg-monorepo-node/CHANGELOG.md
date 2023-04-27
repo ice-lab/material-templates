@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.10
+
+- [chore] update docs link
+
 ## 1.0.5
 
 - [feat] 新增删除构建产物的脚本

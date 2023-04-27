@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.9
+
+- [chore] update docs link
+- [chore] update tsconfig.json
+
 ## 1.0.8
 
 - [feat] use `@applint/spec` instead of `@iceworks/spec`
