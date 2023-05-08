@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.10
+
+- [fix] add docusaurus plugin in sub package template
+
 ## 1.0.9
 
 - [chore] update docs link

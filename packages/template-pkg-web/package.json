@@ -1,6 +1,6 @@
 {
   "name": "@ice/template-pkg-web",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "files": [
     "template"
   ],
