@@ -3,7 +3,9 @@ import { defineConfig } from '@ice/pkg';
 // https://pkg.ice.work/reference/config/
 export default defineConfig({
   plugins: [
+<% if (!locals.workspace) { _%>
     '@ice/pkg-plugin-docusaurus',
+<% } _%>
     '@ice/pkg-plugin-rax-component',
   ],
 });
