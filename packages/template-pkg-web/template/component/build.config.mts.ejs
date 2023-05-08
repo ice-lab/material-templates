@@ -1,4 +1,10 @@
 import { defineConfig } from '@ice/pkg';
 
 // https://pkg.ice.work/reference/config/
-export default defineConfig({});
+export default defineConfig({
+<% if (!locals.workspace) { _%>
+  plugins: [
+    '@ice/pkg-plugin-docusaurus',
+  ],
+<% } _%>
+});

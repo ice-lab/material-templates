@@ -5,4 +5,9 @@ export default defineConfig({
   transform: {
     formats: ['es2017'],
   },
+<% if (!locals.workspace) { _%>
+  plugins: [
+    '@ice/pkg-plugin-docusaurus',
+  ],
+<% } _%>
 });

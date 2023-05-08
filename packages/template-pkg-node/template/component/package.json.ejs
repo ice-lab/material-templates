@@ -45,6 +45,9 @@
   "devDependencies": {
     "@applint/spec": "^1.2.3",
     "@ice/pkg": "^1.0.0",
+<% if (!locals.workspace) { _%>
+    "@ice/pkg-plugin-docusaurus": "^1.0.0",
+<% } _%>
     "eslint": "^8.0.0"
   },
   "publishConfig": {
