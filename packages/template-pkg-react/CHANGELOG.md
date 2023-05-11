@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.13
+
+- [chore] upgrade `@swc/helpers` version
+
 ## 1.2.12
 
 - [fix] add docusaurus plugin in sub package template

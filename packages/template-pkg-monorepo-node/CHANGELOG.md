@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.11
+
+- [chore] upgrade `@swc/helpers` version
+
 ## 1.0.10
 
 - [chore] update docs link
