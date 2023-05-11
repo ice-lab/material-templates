@@ -2,7 +2,7 @@
 
 ## 1.0.13
 
-- [chore] upgrade `@swc/helpers` version
+- [chore] upgrade `@swc/helpers` version to `^0.5.1`
 
 ## 1.0.12
 
