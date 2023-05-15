@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.10
+
+- [fix] some files are not published
+
 ## 1.0.9
 
 - [chore] upgrade `@swc/helpers` version to `^0.5.1`
