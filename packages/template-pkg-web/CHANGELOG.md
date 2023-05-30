@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.13
+
+- [fix] loss of dependencies(react & react-dom)
+
 ## 1.0.12
 
 - [chore] upgrade `@swc/helpers` version to `^0.5.1`
