@@ -23,7 +23,7 @@ export default defineConfig({
           // 2. Remove category link.
           const newSidebarItems = defaultSidebarItems.map(({ link, ...rest }: any) => ({
             ...rest,
-            items: rest.items.map((item: any) => item.items).flat(),
+            items: rest.items.filter((item: any) => item.label === 'docs').map(item => item.items).flat(),
           }));
 
           return newSidebarItems;
