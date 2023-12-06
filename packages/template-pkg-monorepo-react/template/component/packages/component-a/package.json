@@ -53,8 +53,5 @@
   "peerDependencies": {
     "react": "^17 || ^18"
   },
-  "publishConfig": {
-    "registry": "https://registry.npm.alibaba-inc.com"
-  },
   "license": "MIT"
 }

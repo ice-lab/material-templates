@@ -1,6 +1,6 @@
 {
   "name": "@ice/template-pkg-monorepo-node",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "files": [
     "template",
     "!template/component/.docusaurus",

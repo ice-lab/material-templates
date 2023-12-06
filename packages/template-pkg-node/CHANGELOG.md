@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.13
+
+- [feat] 优化 `exports` 导出
+
 ## 1.0.12
 
 - [fix] loss of dependencies(react & react-dom)
