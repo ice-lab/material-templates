@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.13
+
+- [fix] 修复生成文档目录时包含其他非 `docs` 目录下文档问题
+- [chore] 更新 packageManager
+- [chore] 移除 publishConfig
+
 ## 1.0.12
 
 - [fix] some files are not published
