@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.14
+
+- [chore] remove pkg docusaurus plugin
+
 ## 1.0.13
 
 - [fix] loss of dependencies(react & react-dom)

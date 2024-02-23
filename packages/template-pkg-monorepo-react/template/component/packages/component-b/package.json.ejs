@@ -46,6 +46,11 @@
     "header": "workspace:^"
   },
   "devDependencies": {
+<% if (locals.internal) { _%>
+    "@ice/runtime": "^1.0.0",
+    "@ali/pkg-plugin-dev": "^1.0.0",
+    "@ali/pkg-plugin-dev-client": "^1.0.0",
+<% } _%>
     "@ice/pkg": "^1.0.0",
     "@types/react": "^18.0.0",
     "react": "^18.0.0",

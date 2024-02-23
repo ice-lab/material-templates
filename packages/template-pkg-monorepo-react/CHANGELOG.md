@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- [feat] use `@ali/pkg-plugin-dev` instead of `@ice/pkg-plugin-docusaurus` internal
+
 ## 1.0.11
 
 - [fix] 修复生成文档目录时包含其他非 `docs` 目录下文档问题

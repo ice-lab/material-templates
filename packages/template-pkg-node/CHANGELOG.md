@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.14
+
+- [chore] remove docusaurus plugin
+
 ## 1.0.13
 
 - [feat] 优化 `exports` 导出

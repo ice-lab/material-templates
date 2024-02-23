@@ -4,13 +4,14 @@ import { defineConfig } from '@ice/pkg';
 export default defineConfig({
 <% if (locals.internal) { _%>
   plugins: [
-    '@ali/pkg-plugin-dev',
+    [
+      '@ali/pkg-plugin-dev',
+      {
+        clientArgs: {
+          port: 3002,
+        }
+      },
+    ],
   ],
-<% } else { _%>
-<% if (!locals.workspace) { _%>
-  plugins: [
-    '@ice/pkg-plugin-docusaurus',
-  ],
-<% } _%>
 <% } _%>
 });

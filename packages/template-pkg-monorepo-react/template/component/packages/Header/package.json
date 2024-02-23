@@ -1,5 +1,5 @@
 {
-  "name": "component-c",
+  "name": "header",
   "version": "0.1.0",
   "description": "组件功能描述",
   "files": [
@@ -45,6 +45,8 @@
     "@swc/helpers": "^0.5.1"
   },
   "devDependencies": {
+    "@ali/pkg-plugin-dev": "^1.0.0",
+    "@ali/pkg-plugin-dev-client": "^1.0.0",
     "@ice/pkg": "^1.0.0",
     "@types/react": "^18.0.0",
     "react": "^18.0.0",
