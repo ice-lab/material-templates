@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- [chore] rename internal -> isAliInternal
+
 ## 1.1.0
 
 - [feat] use `@ali/pkg-plugin-dev` instead of `@ice/pkg-plugin-docusaurus` internal
