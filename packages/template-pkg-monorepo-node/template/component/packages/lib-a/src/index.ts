@@ -1,4 +1,5 @@
-export function foo(options: any) {
-  console.log('options');
-  return true;
+import { add } from 'common';
+
+export function main() {
+  console.log(add(1, 2));
 }

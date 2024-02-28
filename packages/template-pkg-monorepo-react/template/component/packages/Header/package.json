@@ -1,17 +1,16 @@
 {
-  "name": "lib-c",
+  "name": "header",
   "version": "0.1.0",
   "description": "组件功能描述",
   "files": [
     "esm",
-    "es2017",
     "cjs",
+    "es2017",
     "dist"
   ],
-  "type": "module",
-  "main": "es2017/index.js",
-  "module": "es2017/index.js",
-  "types": "es2017/index.d.ts",
+  "main": "esm/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
   "exports": {
     ".": {
       "es2017": {
@@ -19,32 +18,42 @@
         "default": "./es2017/index.js"
       },
       "default": {
-        "types": "./es2017/index.d.ts",
-        "default": "./es2017/index.js"
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
       }
     },
     "./*": "./*"
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "dist/*",
+    "*.scss",
+    "*.less",
+    "*.css"
+  ],
   "scripts": {
     "start": "ice-pkg start",
-    "build": "rimraf es2017 && ice-pkg build",
+    "build": "rimraf esm es2017 && ice-pkg build",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
     "icepkg",
-    "js",
-    "library"
+    "react",
+    "component"
   ],
   "dependencies": {
+    "@ice/jsx-runtime": "^0.2.0",
     "@swc/helpers": "^0.5.1"
   },
   "devDependencies": {
+    "@ali/pkg-plugin-dev": "^1.0.0",
+    "@ali/pkg-plugin-dev-client": "^1.0.0",
     "@ice/pkg": "^1.0.0",
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
     "typescript": "^4.9.4"
   },
-  "publishConfig": {
-    "access": "public"
+  "peerDependencies": {
+    "react": "^17 || ^18"
   },
   "license": "MIT"
 }

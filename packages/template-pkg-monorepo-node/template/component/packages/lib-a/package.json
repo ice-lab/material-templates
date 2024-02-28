@@ -37,7 +37,8 @@
     "library"
   ],
   "dependencies": {
-    "@swc/helpers": "^0.5.1"
+    "@swc/helpers": "^0.5.1",
+    "common": "workspace:^"
   },
   "devDependencies": {
     "@ice/pkg": "^1.0.0",

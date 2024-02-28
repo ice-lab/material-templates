@@ -1,9 +1,8 @@
 {
   "name": "@ice/template-pkg-monorepo-react",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "files": [
     "template",
-    "!template/component/.docusaurus",
     "!template/component/build",
     "!template/component/pnpm-lock.yaml",
     "!template/**/node_modules",

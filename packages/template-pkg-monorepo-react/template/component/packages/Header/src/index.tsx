@@ -2,14 +2,13 @@ import * as React from 'react';
 import styles from './index.module.css';
 
 interface ComponentProps {
-  /** Title for componentC. */
-  title: string;
+  title?: string;
 }
 
-export default function componentC(props: ComponentProps) {
+export default function Header(props: ComponentProps) {
   const { title = 'Hello World!' } = props;
 
   return (
-    <div className={styles.componentC}>{title}</div>
+    <div className={styles.ComponentA}>Header {title}</div>
   );
 }

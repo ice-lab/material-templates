@@ -1,15 +1,15 @@
-# lib-c
+# common
 
 组件功能描述
 
 ## Install
 
 ```bash
-$ npm i lib-c --save
+$ npm i common --save
 ```
 
 ## Usage
 
 ```js
-import LibC from 'lib-c';
+import { add } from 'common';
 ```
