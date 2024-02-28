@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1
+
+- [chore] rename internal -> isAliInternal
+
 ## 1.3.0
 
 - [chore] use `@ali/pkg-plugin-dev` instead of `@ice/pkg-plugin-docusaurus` to preview components in internal

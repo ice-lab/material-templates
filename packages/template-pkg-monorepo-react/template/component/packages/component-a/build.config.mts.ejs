@@ -2,7 +2,7 @@ import { defineConfig } from '@ice/pkg';
 
 // https://pkg.ice.work/reference/config/
 export default defineConfig({
-<% if (locals.internal) { _%>
+<% if (locals.isAliInternal) { _%>
   plugins: [
     [
       '@ali/pkg-plugin-dev',
