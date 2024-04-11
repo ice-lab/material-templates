@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+- [chore] import `esm` instead of `src` code
+
 ## 1.1.1
 
 - [chore] rename internal -> isAliInternal
