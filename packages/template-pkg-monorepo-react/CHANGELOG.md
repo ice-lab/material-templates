@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3
+
+- [chore] upgrade `@ice/jsx-runtime` version to `^0.3.0`
+
 ## 1.1.2
 
 - [chore] import `esm` instead of `src` code

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.15
+
+- [chore] upgrade `@ice/jsx-runtime` version to `^0.3.0`
+
 ## 1.0.14
 
 - [chore] remove pkg docusaurus plugin
